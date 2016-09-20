@@ -1,0 +1,68 @@
+ _   _      _       
+| | | |    | |      
+| |_| | ___| |_ __  
+|  _  |/ _ \ | '_ \ 
+| | | |  __/ | |_) |
+\_| |_/\___|_| .__/ 
+             | |    
+             |_| 
+
+
+Voor het gebruik van deze applicatie is de volgende informatie van belang:
+
+- Plaats de applicatie op het bureaublad
+- De applicatie moet uitgevoerd worden als Administrator
+- De Pc moet herstart worden na de gemaakte wijzigingen
+- Bewaar de automatisch gegenereerde secpol_backup.inf
+
+De makkelijkste manier om deze applicatie te gebruiken is om de volgorde van
+het hoofdmenu aan te houden. Begin bij keuze 1 en eindig met het herstarten
+van de PC, keuze 4.
+Wanneer alle stappen doorlopen zijn is de PC klaar voor gebruik volgens de 
+instellingen van Heijmans Beveiligingssystemen.
+
+
+1. Gebruikers toevoegen:
+Wanneer de applicatie start wordt er een users.csv aangemaakt in de map van 
+het script.
+Bewerk de users.csv met kladblok en gebruik een ';' tussen alle velden.
+Let op, de eerste regel mag niet verwijderd worden uit de users.csv 
+Zorg ervoor dat alle gebruikers en gegevens goed en compleet ingevuld zijn.
+Wanneer de gebruikers zijn toegevoegd, voer keuze 1 uit.
+Er verschijnt een overzicht van de gebruikers die zullen worden toegevoegd.
+
+2. Group Policy toepassen:
+Deze keuze voegt een nieuwe group policy toe en maakt een backup van de 
+bestaande group policy. Het back-up bestand wordt geplaatst in de map 
+van het script met de naam secpol_backup.inf. Bewaar deze zodat eventueel
+de oude policy kan worden teruggezet.
+
+3. Systeem instellingen:
+De volgende instellngen zullen worden aangepast:
+- Firewall uitschakelen
+- Energiebeheer naar 'Maximale prestaties'
+- Recovery Service uitschakelen (performance)
+- Windows search/index uitschakelen (performance)
+- Windows 10 meldingen uitschakelen
+- Windows Update uitschakelen
+
+4. Systeem opnieuw opstarten:
+Een verplichte keuze na de gemaakte aanpassingen.
+
+5. Help:
+Deze helppagina.
+
+
+
+Deze applicatie is geschreven door:
+
+     _____  ____
+ __ / / _ )/ __/
+/ // / _  |\ \  
+\___/____/___/ 
+
+
+Jeroen Brauns
+Field Engineer
+Heijmans Beveiligingssystemen
+

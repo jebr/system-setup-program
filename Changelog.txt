@@ -1,0 +1,23 @@
+##### Changelog #####
+
+##### Release 1.0.0.0 #####
+##### 15-05-2016 #####
+
+##### Release 1.0.0.1 #####
+##### 17-05-2016 #####
+Bij het opstarten van de applicatie wordt nu eerst de helppagina getoond
+Users.csv wordt nu leeg aangeleverd (om ongewilde acties te voorkomen)
+Voorbeeld_users.csv toegevoegd, zodat men een voorbeeld heeft over de manier van invullen
+Wijzigingen in de help tekst
+
+
+##### Release 1.0.0.2 #####
+##### 19-05-2016 #####
+Verbeteringen in uitzetten Windows 10 meldingen
+Kleine verbeteringen aangebracht
+
+
+##### Release 1.0.0.3 #####
+##### 19-05-2016 #####
+(+) Windows Update uitschakelen
+Wijzigingen in help tekst
