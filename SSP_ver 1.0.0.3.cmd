@@ -1,4 +1,4 @@
-::Scrip written by:
+::Script written by:
 ::     _____  ____
 :: __ / / _ )/ __/
 ::/ // / _  |\ \  
@@ -29,20 +29,20 @@ color 0e
 title Hoofdmenu
 cls
 echo.
-echo          ษออออออออออออออออออออออออออออออออออออออออออออออออป
-echo          บ                    Hoofdmenu                   บ
-echo          ฬออออออออออออออออออออออออออออออออออออออออออออออออน
-echo          บ                                                บ
-echo          บ       1. Gebruikers toevoegen                  บ
-echo          บ       2. Security Policy toepassen             บ
-echo          บ       3. Systeem instellingen                  บ
-echo          บ       4. Systeem opnieuw opstarten             บ
-echo          บ       5. Help                                  บ
-echo          บ                                                บ
-echo          บ       6. Applicatie Sluiten                    บ
-echo          บ                                                บ
-echo          บ                                                บ
-echo          ศออออออออออออออออออออออออออออออออออออออออออออออออผ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยป
+echo          ยบ                    Hoofdmenu                   ยบ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยน
+echo          ยบ                                                ยบ
+echo          ยบ       1. Gebruikers toevoegen                  ยบ
+echo          ยบ       2. Security Policy toepassen             ยบ
+echo          ยบ       3. Systeem instellingen                  ยบ
+echo          ยบ       4. Systeem opnieuw opstarten             ยบ
+echo          ยบ       5. Help                                  ยบ
+echo          ยบ                                                ยบ
+echo          ยบ       6. Applicatie Sluiten                    ยบ
+echo          ยบ                                                ยบ
+echo          ยบ                                                ยบ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยผ
 echo.
 set /p menu="Maak je keuze: "
 if "%menu%"=="1" goto addUsers
@@ -109,18 +109,18 @@ cls
 color 0c
 title ERROR
 echo.
-echo          ษออออออออออออออออออออออออออออออออออออออออออออออออป
-echo          บ                  -- ERROR --                   บ
-echo          ฬออออออออออออออออออออออออออออออออออออออออออออออออน
-echo          บ                                                บ
-echo          บ       Users.csv niet gevonden!                  บ
-echo          บ                                                บ
-echo          บ       Plaats het bestand in dezelfde map       บ
-echo          บ       als het script.                          บ
-echo          บ                                                บ
-echo          บ                                                บ
-echo          บ                                                บ
-echo          ศออออออออออออออออออออออออออออออออออออออออออออออออผ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยป
+echo          ยบ                  -- ERROR --                   ยบ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยน
+echo          ยบ                                                ยบ
+echo          ยบ       Users.csv niet gevonden!                  ยบ
+echo          ยบ                                                ยบ
+echo          ยบ       Plaats het bestand in dezelfde map       ยบ
+echo          ยบ       als het script.                          ยบ
+echo          ยบ                                                ยบ
+echo          ยบ                                                ยบ
+echo          ยบ                                                ยบ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยผ
 echo.
 timeout /t 3 >nul
 goto menu
@@ -164,18 +164,18 @@ cls
 color 0c
 title ERROR
 echo.
-echo          ษออออออออออออออออออออออออออออออออออออออออออออออออป
-echo          บ                  -- ERROR --                   บ
-echo          ฬออออออออออออออออออออออออออออออออออออออออออออออออน
-echo          บ                                                บ
-echo          บ       secpol.inf niet gevonden!                 บ
-echo          บ                                                บ
-echo          บ       Plaats het bestand in dezelfde map       บ
-echo          บ       als het script.                          บ
-echo          บ                                                บ
-echo          บ                                                บ
-echo          บ                                                บ
-echo          ศออออออออออออออออออออออออออออออออออออออออออออออออผ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยป
+echo          ยบ                  -- ERROR --                   ยบ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยน
+echo          ยบ                                                ยบ
+echo          ยบ       secpol.inf niet gevonden!                 ยบ
+echo          ยบ                                                ยบ
+echo          ยบ       Plaats het bestand in dezelfde map       ยบ
+echo          ยบ       als het script.                          ยบ
+echo          ยบ                                                ยบ
+echo          ยบ                                                ยบ
+echo          ยบ                                                ยบ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยผ
 echo.
 timeout /t 3 >nul
 goto menu
@@ -186,21 +186,21 @@ color 0e
 title Systeem Instellingen
 set menu1=
 echo.
-echo          ษออออออออออออออออออออออออออออออออออออออออออออออออป
-echo          บ               Systeem Instellingen             บ
-echo          ฬออออออออออออออออออออออออออออออออออออออออออออออออน
-echo          บ                                                บ
-echo          บ       1. Firewall uitschakelen                 บ
-echo          บ       2. Energiebeheer aanpassen               บ
-echo          บ       3. Windows Recovery uitschakelen         บ
-echo          บ       4. Windows search/index uitschakelen     บ
-echo          บ       5. Windows 10 meldingen uitschakelen     บ
-echo          บ       6. Windows Update uitschakelen           บ
-echo          บ                                                บ
-echo          บ       7. Terug naar het Hoofdmenu              บ
-echo          บ                                                บ
-echo          บ                                                บ
-echo          ศออออออออออออออออออออออออออออออออออออออออออออออออผ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยป
+echo          ยบ               Systeem Instellingen             ยบ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยน
+echo          ยบ                                                ยบ
+echo          ยบ       1. Firewall uitschakelen                 ยบ
+echo          ยบ       2. Energiebeheer aanpassen               ยบ
+echo          ยบ       3. Windows Recovery uitschakelen         ยบ
+echo          ยบ       4. Windows search/index uitschakelen     ยบ
+echo          ยบ       5. Windows 10 meldingen uitschakelen     ยบ
+echo          ยบ       6. Windows Update uitschakelen           ยบ
+echo          ยบ                                                ยบ
+echo          ยบ       7. Terug naar het Hoofdmenu              ยบ
+echo          ยบ                                                ยบ
+echo          ยบ                                                ยบ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยผ
 echo.
 set /p menu1="Maak je keuze: "
 if "%menu1%"=="1" goto firewall
@@ -263,18 +263,18 @@ cls
 color 0c
 title ERROR
 echo.
-echo          ษออออออออออออออออออออออออออออออออออออออออออออออออป
-echo          บ                  -- ERROR --                   บ
-echo          ฬออออออออออออออออออออออออออออออออออออออออออออออออน
-echo          บ                                                บ
-echo          บ       scheme.pow niet gevonden!                 บ
-echo          บ                                                บ
-echo          บ       Plaats het bestand in dezelfde map       บ
-echo          บ       als het script.                          บ
-echo          บ                                                บ
-echo          บ                                                บ
-echo          บ                                                บ
-echo          ศออออออออออออออออออออออออออออออออออออออออออออออออผ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยป
+echo          ยบ                  -- ERROR --                   ยบ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยน
+echo          ยบ                                                ยบ
+echo          ยบ       scheme.pow niet gevonden!                 ยบ
+echo          ยบ                                                ยบ
+echo          ยบ       Plaats het bestand in dezelfde map       ยบ
+echo          ยบ       als het script.                          ยบ
+echo          ยบ                                                ยบ
+echo          ยบ                                                ยบ
+echo          ยบ                                                ยบ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยผ
 echo.
 timeout /t 3 >nul
 goto systemSettings
@@ -369,14 +369,14 @@ cls
 color 0e
 title Systeem herstarten
 echo.
-echo          ษออออออออออออออออออออออออออออออออออออออออออออออออป
-echo          บ                Systeem herstarten              บ
-echo          ฬออออออออออออออออออออออออออออออออออออออออออออออออน
-echo          บ                                                บ
-echo          บ       Het systeem zal over 5 sec. herstarten   บ
-echo          บ                                                บ
-echo          บ                                                บ
-echo          ศออออออออออออออออออออออออออออออออออออออออออออออออผ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยป
+echo          ยบ                Systeem herstarten              ยบ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยน
+echo          ยบ                                                ยบ
+echo          ยบ       Het systeem zal over 5 sec. herstarten   ยบ
+echo          ยบ                                                ยบ
+echo          ยบ                                                ยบ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยผ
 echo.
 timeout /t 5 >nul
 shutdown /r /t 0
@@ -405,18 +405,18 @@ cls
 color 0c
 title ERROR
 echo.
-echo          ษออออออออออออออออออออออออออออออออออออออออออออออออป
-echo          บ                  -- ERROR --                   บ
-echo          ฬออออออออออออออออออออออออออออออออออออออออออออออออน
-echo          บ                                                บ
-echo          บ       help.txt niet gevonden!                   บ
-echo          บ                                                บ
-echo          บ       Plaats het bestand in dezelfde map       บ
-echo          บ       als het script.                          บ
-echo          บ                                                บ
-echo          บ                                                บ
-echo          บ                                                บ
-echo          ศออออออออออออออออออออออออออออออออออออออออออออออออผ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยป
+echo          ยบ                  -- ERROR --                   ยบ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยน
+echo          ยบ                                                ยบ
+echo          ยบ       help.txt niet gevonden!                   ยบ
+echo          ยบ                                                ยบ
+echo          ยบ       Plaats het bestand in dezelfde map       ยบ
+echo          ยบ       als het script.                          ยบ
+echo          ยบ                                                ยบ
+echo          ยบ                                                ยบ
+echo          ยบ                                                ยบ
+echo          รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยผ
 echo.
 timeout /t 3 >nul
 goto menu
