@@ -21,3 +21,9 @@ Kleine verbeteringen aangebracht
 ##### 19-05-2016 #####
 (+) Windows Update uitschakelen
 Wijzigingen in help tekst
+
+
+##### Release 1.0.0.4 #####
+##### 19-05-2016 #####
+(+) Windows Update uitschakelen
+Wijzigingen in help tekst
