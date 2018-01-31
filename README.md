@@ -9,7 +9,7 @@ A tool that I made to setup a Windows system.
 
 [DOWNLOAD EXE HERE](https://github.com/jebr/SSP/releases/)
 
-**Note:** Windows Defender may report the EXE as a trojan (Win32/Pocyx.C!cl), and may therefore prevent you from extracting the EXE to anywhere on your computer. Set up an exclusion in **Settings > Update & Security > Windows Defender > Exclusions** by adding the folder you intend to extract the EXE to.
+**Note:** The use of this script is at your own risk. I assume that you know what you are doing.
 
 ## How to Use
 
