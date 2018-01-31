@@ -1,4 +1,6 @@
-![logo](https://i.imgur.com/6O8msWc.png) # System Setup Program (SSP) 
+#SSP
+![logo](https://i.imgur.com/6O8msWc.png) 
+# System Setup Program
 
 A tool that I created to setup a Windows system.
 
