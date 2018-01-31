@@ -18,8 +18,7 @@ Voor het gebruik van deze applicatie is de volgende informatie van belang:
 De makkelijkste manier om deze applicatie te gebruiken is om de volgorde van
 het hoofdmenu aan te houden. Begin bij keuze 1 en eindig met het herstarten
 van de PC, keuze 4.
-Wanneer alle stappen doorlopen zijn is de PC klaar voor gebruik volgens de 
-instellingen van Heijmans Beveiligingssystemen.
+Wanneer alle stappen doorlopen zijn is de PC klaar voor gebruik.
 
 
 1. Gebruikers toevoegen:
