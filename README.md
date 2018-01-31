@@ -16,3 +16,6 @@ A tool that I made to setup a Windows system.
 **You need to run it as administrator.**
 
 Just follow the instructions in the help section.
+
+## Program options
+1. 
