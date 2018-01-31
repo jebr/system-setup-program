@@ -31,4 +31,6 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
   * [Disable Windows 10 tracking](https://github.com/10se1ucgo/DisableWinTracking/releases/)
   
 ## TODO
-- [ ] An uncompleted task
+- [x] Launch version v1.0.0.4
+- [x] Rewrite ReadMe
+- [ ] Your wishes :smiley:
