@@ -56,13 +56,5 @@ Deze helppagina.
 
 Deze applicatie is geschreven door:
 
-     _____  ____
- __ / / _ )/ __/
-/ // / _  |\ \  
-\___/____/___/ 
-
-
 Jeroen Brauns
-Field Engineer
-Heijmans Beveiligingssystemen
 
