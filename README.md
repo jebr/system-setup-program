@@ -29,6 +29,8 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
   * Disable Windows search
   * Disable Windows update
   * [Disable Windows 10 tracking](https://github.com/10se1ucgo/DisableWinTracking/releases/)
+1. Test
+  * Sublist
   
 ## TODO
 - [x] Launch version v1.0.0.4
