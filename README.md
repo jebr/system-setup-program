@@ -18,11 +18,16 @@ A tool that I made to setup a Windows system.
 Just follow the instructions in the help section. [Click here](help.txt) to open the help section
 
 ## Program options
-1. Add users
-..* Use the user.csv to add users
-2. Apply security policy
-..* Apply the added security policy
-3. System settings
-..* Disable Firewall
-..* Change eneryplan with the added energyplan
+* Add users
+  * Use the user.csv to add users
+* Apply security policy
+  * Apply the added security policy
+* System settings
+  * Disable firewall
+  * Change eneryplan with the added energyplan
+  * Disable Windows recovery
+  * Disable Windows search
+  * Disable Windows update
+  * [Disable Windows 10 tracking](https://github.com/10se1ucgo/DisableWinTracking/releases/)
+  
 
