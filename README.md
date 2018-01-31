@@ -19,7 +19,7 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
 
 ## Program options
 * Add users
-  * Use the user.csv to add users
+  * Use the user.csv to add Windows users
 * Apply security policy
   * Apply the added security policy
 * System settings
