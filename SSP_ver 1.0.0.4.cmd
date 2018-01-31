@@ -1,14 +1,14 @@
 ::[Bat To Exe Converter]
 ::
-::fBE1pAF6MU+EWHreyHcjLQlHcCWGMWK0D6YI+unv4Pi7hkgOX/YwaLPo6YTDLeEA/kD2SYAi2WhYnc4ACCRNbRe5fUE3ungi
-::fBE1pAF6MU+EWHreyHcjLQlHcCWGMWK0D6YI+unv4Pi7hkgOX/YwaLPo6YTDLeEA/kD2SYUu3n9XnYUcAww4
-::fBE1pAF6MU+EWHreyHcjLQlHcCWGMWK0D6YI+unv4Pi7hkgOX/YwaLPo6YTDLeEA/kD2SYUo1WpVlIUFAh04
-::fBE1pAF6MU+EWHreyHcjLQlHcCWGMWK0D6YI+unv4Pi7hkgOX/YwaLPo6YTDLeEA/kD2SYM+02hJ1sgfGns=
-::fBE1pAF6MU+EWHreyHcjLQlHcCWGMWK0D6YI+unv4Pi7hkgOX/YwaLP/06ePIuwW3UzqQYQs1XFTlsxCCQNdHg==
-::fBE1pAF6MU+EWHreyHcjLQlHcCWGMWK0D6YI+unv4Pi7hkgOX/YwaLPo6YTDLeEA/kD2SbUl13RdnccDC1VMZgbL
-::fBE1pAF6MU+EWHreyHcjLQlHcCWGMWK0D6YI+unv4Pi7hkgOX/YwaLPo6YTDLeEA/kD2SZ4o2moUjNMYbA==
+::fBE1pAF6MU+EWHreyHcjLQlHcCWGMWK0D6YI+unv4Pi7hkgOX/YwaLPo6YTDLeEA/kD2SZ8j1UZ+kdgNDhddSRulWh01qmVLuGO6IZTS4UGwBE2R4ys=
+::fBE1pAF6MU+EWHreyHcjLQlHcCWGMWK0D6YI+unv4Pi7hkgOX/YwaLPo6YTDLeEA/kD2SZ8j1UZJm8MJAR4Wbh28Dg==
+::fBE1pAF6MU+EWHreyHcjLQlHcCWGMWK0D6YI+unv4Pi7hkgOX/YwaLPo6YTDLeEA/kD2SZ8j1UZJncgcAxcWdxytDg==
+::fBE1pAF6MU+EWHreyHcjLQlHcCWGMWK0D6YI+unv4Pi7hkgOX/YwaLPo6YTDLeEA/kD2SZ8j1UZPi84eH1VbbQTL
+::fBE1pAF6MU+EWHreyHcjLQlHcCWGMWK0D6YI+unv4Pi7hkgOX/YwaLPo6YTDLeEA/kD2SZ8j1UZMl8QeDh5dchaUexwxu30MtXeTVw==
+::fBE1pAF6MU+EWHreyHcjLQlHcCWGMWK0D6YI+unv4Pi7hkgOX/YwaLPo6YTDLeEA/kD2SZ8j1UZ5kMoCCx5UcRXlehcgyQ==
+::fBE1pAF6MU+EWHreyHcjLQlHcCWGMWK0D6YI+unv4Pi7hkgOX/YwaLPo6YTDLeEA/kD2SZ8j1UZSncccQg9AanI=
 ::YAwzoRdxOk+EWAjk
-::fBw5plQjdCyDJGyX8VAjFDpQQQ2MNXiuFLQI5/rHy++UqVkSRN4Yao7L0r2NLO8S7lapRZkhz31VloY/CQ9MdxysfUJh52dBuQQ=
+::fBw5plQjdCyDJGyX8VAjFDpQQQ2MNXiuFLQI5/rHy++UqVkSRN4MS7+W17WdNOUB1nbXRakh2X1V1sIPA3s=
 ::YAwzuBVtJxjWCl3EqQJgSA==
 ::ZR4luwNxJguZRRnk
 ::Yhs/ulQjdF+5
@@ -17,7 +17,7 @@
 ::ZR41oxFsdFKZSDk=
 ::eBoioBt6dFKZSDk=
 ::cRo6pxp7LAbNWATEpCI=
-::egkzugNsPRvcWATEpCI=
+::egkzugNsPRvcWATEpSI=
 ::dAsiuh18IRvcCxnZtBJQ
 ::cRYluBh/LU+EWAnk
 ::YxY4rhs+aU+IeA==
@@ -27,7 +27,7 @@
 ::eg0/rx1wNQPfEVWB+kM9LVsJDDebL3+/C/Uv7fzu/6q3sEIaRuMyGA==
 ::fBEirQZwNQPfEVWB+kM9LVsJDDexDAs=
 ::cRolqwZ3JBvQF1fEqQITIBpaSwHCL3KpErARqPv++/6OrEoONA==
-::dhA7uBVwLU+EWHGB/Ug9KRVHDDeDOm6uH/VaqNv+7P+Vq1kENA==
+::dhA7uBVwLU+EWDk=
 ::YQ03rBFzNR3SWATElA==
 ::dhAmsQZ3MwfNWATE3kciJx5aDCaQPX60FdU=
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
@@ -371,7 +371,7 @@ timeout /t 3 >nul
 goto systemSettings
 
 :disableWinTracking
-start DisableWinTracking.exe
+start DisableWinTracking_v3.2.1.exe
 goto systemSettings
 
 
@@ -389,7 +389,7 @@ del %~dp0\scheme.pow /f /q >nul
 del %~dp0\help.txt /f /q >nul
 del %~dp0\voorbeeld_users.csv /f /q >nul
 del %~dp0\Changelog.txt /f /q >nul
-del %~dp0\DisableWinTracking.exe /f /q >nul
+del %~dp0\DisableWinTracking_v3.2.1.exe /f /q >nul
 del %~dp0\dwt.log /f /q >nul
 cls
 color 0e
@@ -461,6 +461,6 @@ del %~dp0\scheme.pow /f /q >nul
 del %~dp0\help.txt /f /q >nul
 del %~dp0\voorbeeld_users.csv /f /q >nul
 del %~dp0\Changelog.txt /f /q >nul
-del %~dp0\DisableWinTracking.exe /f /q >nul
+del %~dp0\DisableWinTracking_v3.2.1.exe /f /q >nul
 del %~dp0\dwt.log /f /q >nul
 exit

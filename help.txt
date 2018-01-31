@@ -38,13 +38,14 @@ van het script met de naam secpol_backup.inf. Bewaar deze zodat eventueel
 de oude policy kan worden teruggezet.
 
 3. Systeem instellingen:
-De volgende instellngen zullen worden aangepast:
+De volgende instellngen kunnen worden aangepast:
 - Firewall uitschakelen
 - Energiebeheer naar 'Maximale prestaties'
 - Recovery Service uitschakelen (performance)
 - Windows search/index uitschakelen (performance)
-- Windows 10 meldingen uitschakelen
 - Windows Update uitschakelen
+- Windows 10 tracking deactiveren
+
 
 4. Systeem opnieuw opstarten:
 Een verplichte keuze na de gemaakte aanpassingen.
