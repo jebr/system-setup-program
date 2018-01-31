@@ -2,7 +2,6 @@
 
 A tool that I created to setup a Windows system.
 
-<!-- ![screenshot](https://i.imgur.com/qfC2elN.png) -->
 ![screenshot](https://i.imgur.com/9uZxP6T.png)
 
 ## DOWNLOAD
