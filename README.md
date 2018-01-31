@@ -18,4 +18,11 @@ A tool that I made to setup a Windows system.
 Just follow the instructions in the help section. [Click here](help.txt) to open the help section
 
 ## Program options
-1. 
+1. Add users
+..* Use the user.csv to add users
+2. Apply security policy
+..* Apply the added security policy
+3. System settings
+..* Disable Firewall
+..* Change eneryplan with the added energyplan
+
