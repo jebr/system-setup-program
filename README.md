@@ -23,7 +23,7 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
 2. Apply security policy
     * Apply the added security policy
 3. System settings
-    * Disable firewall
+    * Edit Firewall
     * Change eneryplan with the added energyplan
     * Disable Windows recovery
     * Disable Windows search
