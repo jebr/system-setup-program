@@ -29,3 +29,7 @@
 (+) Nieuw icoon
 (+) Alle bestanden worden nu verwijderd
 (+) Intergratie Disable Wintracking
+
+##### Release 1.0.0.5 #####
+##### 27-03-2018 #####
+(+) Firewall ping (ICMP) aanassing
