@@ -69,20 +69,20 @@ color 0e
 title Hoofdmenu
 cls
 echo.
-echo          ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-echo          º                    Hoofdmenu                   º
-echo          ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
-echo          º                                                º
-echo          º       1. Gebruikers toevoegen                  º
-echo          º       2. Security Policy toepassen             º
-echo          º       3. Systeem instellingen                  º
-echo          º       4. Systeem opnieuw opstarten             º
-echo          º       5. Help                                  º
-echo          º                                                º
-echo          º       6. Applicatie Sluiten                    º
-echo          º                                                º
-echo          º                                                º
-echo          ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+echo          **************************************************
+echo          *                    Hoofdmenu                   *
+echo          **************************************************
+echo          *                                                *
+echo          *       1. Gebruikers toevoegen                  *
+echo          *       2. Security Policy toepassen             *
+echo          *       3. Systeem instellingen                  *
+echo          *       4. Systeem opnieuw opstarten             *
+echo          *       5. Help                                  *
+echo          *                                                *
+echo          *       6. Applicatie Sluiten                    *
+echo          *                                                *
+echo          *                                                *
+echo          **************************************************
 echo.
 set /p menu="Maak je keuze: "
 if "%menu%"=="1" goto addUsers
@@ -146,18 +146,18 @@ cls
 color 0c
 title ERROR
 echo.
-echo          ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-echo          º                  -- ERROR --                   º
-echo          ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
-echo          º                                                º
-echo          º       Users.csv niet gevonden!                 º
-echo          º                                                º
-echo          º       Plaats het bestand op dezelfde locatie   º
-echo          º       als het script.                          º
-echo          º                                                º
-echo          º                                                º
-echo          º                                                º
-echo          ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+echo          **************************************************
+echo          *                  -- ERROR --                   *
+echo          **************************************************
+echo          *                                                *
+echo          *       Users.csv niet gevonden!                 *
+echo          *                                                *
+echo          *       Plaats het bestand op dezelfde locatie   *
+echo          *       als het script.                          *
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          **************************************************
 echo.
 timeout /t 3 >nul
 goto menu
@@ -201,18 +201,18 @@ cls
 color 0c
 title ERROR
 echo.
-echo          ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-echo          º                  -- ERROR --                   º
-echo          ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
-echo          º                                                º
-echo          º       secpol.inf niet gevonden!                 º
-echo          º                                                º
-echo          º       Plaats het bestand in dezelfde map       º
-echo          º       als het script.                          º
-echo          º                                                º
-echo          º                                                º
-echo          º                                                º
-echo          ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+echo          **************************************************
+echo          *                  -- ERROR --                   *
+echo          **************************************************
+echo          *                                                *
+echo          *       secpol.inf niet gevonden!                *
+echo          *                                                *
+echo          *       Plaats het bestand in dezelfde map       *
+echo          *       als het script.                          *
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          **************************************************
 echo.
 timeout /t 3 >nul
 goto menu
@@ -223,21 +223,21 @@ color 0e
 title Systeem Instellingen
 set menu1=
 echo.
-echo          ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-echo          º               Systeem Instellingen             º
-echo          ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
-echo          º                                                º
-echo          º       1. Firewall aanpassen                    º
-echo          º       2. Energiebeheer aanpassen               º
-echo          º       3. Windows Recovery uitschakelen         º
-echo          º       4. Windows search/index uitschakelen     º
-echo          º       5. Windows Update uitschakelen           º
-echo          º       6. Windows 10 - Disable tracking         º
-echo          º                                                º
-echo          º       7. Terug naar het Hoofdmenu              º
-echo          º                                                º
-echo          º                                                º
-echo          ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+echo          **************************************************
+echo          *               Systeem Instellingen             *
+echo          **************************************************
+echo          *                                                *
+echo          *       1. Firewall aanpassen                    *
+echo          *       2. Energiebeheer aanpassen               *
+echo          *       3. Windows Recovery uitschakelen         *
+echo          *       4. Windows search/index uitschakelen     *
+echo          *       5. Windows Update uitschakelen           *
+echo          *       6. Windows 10 - Disable tracking         *
+echo          *                                                *
+echo          *       7. Terug naar het Hoofdmenu              *
+echo          *                                                *
+echo          *                                                *
+echo          **************************************************
 echo.
 set /p menu1="Maak je keuze: "
 if "%menu1%"=="1" goto firewallsettings
@@ -256,21 +256,21 @@ color 0e
 title Firewall instellingen
 set menu1=
 echo.
-echo          ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-echo          º               Systeem Instellingen             º
-echo          ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
-echo          º                                                º
-echo          º       1. Ping (ICMP) toestaan                  º
-echo          º                                                º
-echo          º                                                º
-echo          º                                                º
-echo          º                                                º
-echo          º                                                º
-echo          º                                                º
-echo          º       7. Terug naar het Hoofdmenu              º
-echo          º                                                º
-echo          º                                                º
-echo          ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+echo          **************************************************
+echo          *               Systeem Instellingen             *
+echo          **************************************************
+echo          *                                                *
+echo          *       1. Ping (ICMP) toestaan                  *
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          *       7. Terug naar het Hoofdmenu              *
+echo          *                                                *
+echo          *                                                *
+echo          **************************************************
 echo.
 set /p menu1="Maak je keuze: "
 if "%menu1%"=="1" goto ping
@@ -299,19 +299,62 @@ goto firewallsettings
 :energy
 cls
 color 0e
-title Energie Settings
+title Energieinstellingen
+set menu1=
 echo.
+echo          **************************************************
+echo          *               Energieinstellingen              *
+echo          **************************************************
+echo          *                                                *
+echo          *       1. Energieinstellingen auto-lock         *
+echo          *       2. Energieinstellingen altijd aan        *
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          *       7. Terug naar het Hoofdmenu              *
+echo          *                                                *
+echo          *                                                *
+echo          **************************************************
+echo.
+set /p menu1="Maak je keuze: "
+if "%menu1%"=="1" goto eneryLock
+if "%menu1%"=="2" goto energyFull
+if "%menu1%"=="7" goto menu
+if "%menu1%"==" " goto systemSettings
+goto systemSettings
+
+:eneryLock
 echo Energiebeheer wordt nu aangepast.
 echo.
 color 0E
-set powerconfig=%~dp0\scheme.pow
-
+set powerconfiglock=%~dp0\energyAutoLock.pow
 ::Check if file scheme.pow exists
-if not exist %powerconfig% goto error_energy
-goto set_energy
+if not exist %powerconfiglock% goto error_energy
+goto setEnergyLock
 
-:set_energy
-powercfg -import %powerconfig% 00000000-0000-0000-0000-000000000000 >nul
+:setEnergyLock
+powercfg -import %powerconfiglock% 39ff2e23-e11c-4fc3-ab0f-da25fadb8a89 >nul
+powercfg -setactive 39ff2e23-e11c-4fc3-ab0f-da25fadb8a89 >nul
+color 0A
+cls
+echo.
+echo Actieve Power Schema:
+echo.
+powercfg -getactivescheme
+echo.
+timeout /t 3 >nul
+goto systemSettings
+
+:energyFull
+set powerconfigfull=%~dp0\energyFull.pow
+::Check if file scheme.pow exists
+if not exist %powerconfigfull% goto error_energy
+goto setEnergyFull
+
+:setEnergyFull
+powercfg -import %powerconfigfull% 00000000-0000-0000-0000-000000000000 >nul
 powercfg -setactive 00000000-0000-0000-0000-000000000000 >nul
 color 0A
 cls
@@ -330,21 +373,21 @@ cls
 color 0c
 title ERROR
 echo.
-echo          ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-echo          º                  -- ERROR --                   º
-echo          ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
-echo          º                                                º
-echo          º       scheme.pow niet gevonden!                 º
-echo          º                                                º
-echo          º       Plaats het bestand in dezelfde map       º
-echo          º       als het script.                          º
-echo          º                                                º
-echo          º                                                º
-echo          º                                                º
-echo          ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+echo          **************************************************
+echo          *                  -- ERROR --                   *
+echo          **************************************************
+echo          *                                                *
+echo          *       Schemainstellingen niet gevonden!        *
+echo          *                                                *
+echo          *       Plaats het bestand in dezelfde map       *
+echo          *       als het script.                          *
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          **************************************************
 echo.
 timeout /t 3 >nul
-goto systemSettings
+goto energy
 
 :recovery
 cls
@@ -425,14 +468,14 @@ cls
 color 0e
 title Systeem herstarten
 echo.
-echo          ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-echo          º                Systeem herstarten              º
-echo          ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
-echo          º                                                º
-echo          º       Het systeem zal over 5 sec. herstarten   º
-echo          º                                                º
-echo          º                                                º
-echo          ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+echo          **************************************************
+echo          *                Systeem herstarten              *
+echo          **************************************************
+echo          *                                                *
+echo          *       Het systeem zal over 5 sec. herstarten   *
+echo          *                                                *
+echo          *                                                *
+echo          **************************************************
 echo.
 timeout /t 5 >nul
 shutdown /r /t 0
@@ -461,21 +504,21 @@ cls
 color 0c
 title ERROR
 echo.
-echo          ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-echo          º                  -- ERROR --                   º
-echo          ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
-echo          º                                                º
-echo          º       help.txt niet gevonden!                   º
-echo          º                                                º
-echo          º       Plaats het bestand in dezelfde map       º
-echo          º       als het script.                          º
-echo          º                                                º
-echo          º                                                º
-echo          º                                                º
-echo          ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+echo          **************************************************
+echo          *                  -- ERROR --                   *
+echo          **************************************************
+echo          *                                                *
+echo          *       help.txt niet gevonden!                  *
+echo          *                                                *
+echo          *       Plaats het bestand in dezelfde map       *
+echo          *       als het script.                          *
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          **************************************************
 echo.
 timeout /t 3 >nul
-goto menu
+goto end
 
 :end
 cls
@@ -487,7 +530,8 @@ set powerconfig=
 set menu2=
 del %~dp0\users.csv /f /q >nul
 del %~dp0\secpol.inf /f /q >nul
-del %~dp0\scheme.pow /f /q >nul
+del %~dp0\energyAutoLock.pow /f /q >nul
+del %~dp0\energyFull.pow /f /q >nul
 del %~dp0\help.txt /f /q >nul
 del %~dp0\voorbeeld_users.csv /f /q >nul
 del %~dp0\Changelog.txt /f /q >nul
