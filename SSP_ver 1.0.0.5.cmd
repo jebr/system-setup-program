@@ -444,7 +444,7 @@ timeout /t 3 >nul
 goto systemSettings
 
 :disableWinTracking
-start DisableWinTracking_v3.2.1.exe
+start DisableWinTracking_v3.2.3.exe
 goto systemSettings
 
 
