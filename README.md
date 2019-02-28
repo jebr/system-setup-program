@@ -33,6 +33,6 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
 
 
 ## TODO
-- [x] Launch version v1.0.0.4
+- [x] Launch version v1.0.0.6
 - [x] Rewrite ReadMe
 - [ ] Your wishes :smiley:
