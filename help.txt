@@ -39,7 +39,7 @@ de oude policy kan worden teruggezet.
 3. Systeem instellingen:
 De volgende instellngen kunnen worden aangepast:
 - Firewall uitschakelen
-- Energiebeheer naar 'Maximale prestaties'
+- Energiebeheer
 - Recovery Service uitschakelen (performance)
 - Windows search/index uitschakelen (performance)
 - Windows Update uitschakelen
@@ -51,10 +51,3 @@ Een verplichte keuze na de gemaakte aanpassingen.
 
 5. Help:
 Deze helppagina.
-
-
-
-Deze applicatie is geschreven door:
-
-Jeroen Brauns
-
