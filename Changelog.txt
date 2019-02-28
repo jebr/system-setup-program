@@ -38,3 +38,4 @@
 ##### 28-02-2019 #####
 (+) Nieuwe energieschemas (Auto-lock/Full)
 (+) Verbeteringen in het menu
+(+) Update DisableWintracking naar v3.2.3
