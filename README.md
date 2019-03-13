@@ -1,9 +1,9 @@
 # System Setup Program (SSP)
-![logo](https://i.imgur.com/6O8msWc.png) 
+![logo](https://i.imgur.com/vYf9XY3.png) 
 
 A tool that I made to setup a Windows system.
 
-![screenshot](https://i.imgur.com/9uZxP6T.png)
+![screenshot](https://i.imgur.com/zroTWUe.png)
 
 ## DOWNLOAD
 
@@ -22,8 +22,10 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
     * Use the user.csv to add Windows users
 2. Apply security policy
     * Apply the added security policy
-3. System settings
-    * Edit Firewall
+3. Remove Windows 10 bloatware
+	* [Windows 10 Debloater] (https://github.com/Sycnex/Windows10Debloater)
+4. System settings
+    * Firewall - Allow ICMPv4
     * Change eneryplan with the added energyplan
     * Disable Windows recovery
     * Disable Windows search
@@ -31,8 +33,7 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
     * [Disable Windows 10 tracking](https://github.com/10se1ucgo/DisableWinTracking/releases/)
 
 
-
 ## TODO
-- [x] Launch version v1.0.0.6
+- [x] Launch version v1.0.0.7
 - [x] Rewrite ReadMe
 - [ ] Your wishes :smiley:
