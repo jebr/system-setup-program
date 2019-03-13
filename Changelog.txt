@@ -39,3 +39,7 @@
 (+) Nieuwe energieschemas (Auto-lock/Full)
 (+) Verbeteringen in het menu
 (+) Update DisableWintracking naar v3.2.3
+
+##### Release 1.0.0.7 #####
+##### 13-03-2019 #####
+(+) Bloatware verwijderen
