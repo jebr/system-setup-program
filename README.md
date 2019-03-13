@@ -23,7 +23,7 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
 2. Apply security policy
     * Apply the added security policy
 3. Remove Windows 10 bloatware
-	* [Windows 10 Debloater] (https://github.com/Sycnex/Windows10Debloater)
+	* [Windows 10 Debloater](https://github.com/Sycnex/Windows10Debloater)
 4. System settings
     * Firewall - Allow ICMPv4
     * Change eneryplan with the added energyplan
