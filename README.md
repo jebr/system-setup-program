@@ -23,14 +23,14 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
 2. Apply security policy
     * Apply the added security policy
 3. Remove Windows 10 bloatware
-	* [Windows 10 Debloater](https://github.com/Sycnex/Windows10Debloater)
+	* [Windows 10 Debloater](https://github.com/Sycnex/Windows10Debloater){:target="_blank"}
 4. System settings
     * Firewall - Allow ICMPv4
     * Change eneryplan with the added energyplan
     * Disable Windows recovery
     * Disable Windows search
     * Disable Windows update
-    * [Disable Windows 10 tracking](https://github.com/10se1ucgo/DisableWinTracking/releases/)
+    * [Disable Windows 10 tracking](https://github.com/10se1ucgo/DisableWinTracking/releases/){:target="_blank"}
 
 
 ## TODO
