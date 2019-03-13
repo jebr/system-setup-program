@@ -1,5 +1,5 @@
 # System Setup Program (SSP)
-![logo](https://i.imgur.com/vYf9XY3.png) 
+![logo](https://i.imgur.com/TQi9rJd.png) 
 
 A tool that I made to setup a Windows system.
 
