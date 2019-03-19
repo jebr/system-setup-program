@@ -351,14 +351,14 @@ echo          *                                                *
 echo          *                                                *
 echo          *                                                *
 echo          *                                                *
-echo          *       7. Terug naar het Hoofdmenu              *
+echo          *       7. Terug naar het Systeem instellingen   *
 echo          *                                                *
 echo          *                                                *
 echo          **************************************************
 echo.
 set /p menu1="Maak je keuze: "
 if "%menu1%"=="1" goto ping
-if "%menu1%"=="7" goto menu
+if "%menu1%"=="7" goto systemSettings
 if "%menu1%"==" " goto firewallsettings
 goto firewallsettings
 
