@@ -51,6 +51,3 @@ Een verplichte keuze na de gemaakte aanpassingen.
 
 5. Help:
 Deze helppagina.
-
-
-Test changes
