@@ -53,7 +53,7 @@ setlocal enabledelayedexpansion
 mode con:cols=67 lines=30
 ::zwart/geel
 color 0e
-title System Setup Program v1.0.0.4
+title System Setup Program v1.3.0.1
 
 :start
 cls
@@ -81,7 +81,7 @@ echo          **************************************************
 echo          *                                                *
 echo          *       1. Gebruikers toevoegen                  *
 echo          *       2. Security Policy toepassen             *
-echo          *       3. Software verwijderen                  *
+echo          *       3. Software verwijderen (Bloatware)      *
 echo          *       4. Systeem instellingen                  *
 echo          *       5. Systeem opnieuw opstarten             *
 echo          *       6. Help                                  *
@@ -316,9 +316,10 @@ echo          *       2. Energiebeheer aanpassen               *
 echo          *       3. Windows Recovery uitschakelen         *
 echo          *       4. Windows search/index uitschakelen     *
 echo          *       5. Windows Update uitschakelen           *
-echo          *       6. Windows 10 - Disable tracking         *
+echo          *       6. RDP activeren                         *
+echo          *       7. Windows 10 - Disable tracking         *
 echo          *                                                *
-echo          *       7. Terug naar het Hoofdmenu              *
+echo          *       8. Terug naar het Hoofdmenu              *
 echo          *                                                *
 echo          *                                                *
 echo          **************************************************
@@ -329,8 +330,9 @@ if "%menu1%"=="2" goto energy
 if "%menu1%"=="3" goto recovery
 if "%menu1%"=="4" goto windowsSearch
 if "%menu1%"=="5" goto windowsUpdate
-if "%menu1%"=="6" goto disableWinTracking
-if "%menu1%"=="7" goto menu
+if "%menu1%"=="6" goto enableRDP
+if "%menu1%"=="7" goto disableWinTracking
+if "%menu1%"=="8" goto menu
 if "%menu1%"==" " goto systemSettings
 goto systemSettings
 
@@ -523,6 +525,23 @@ color 0A
 cls
 echo.
 echo Windows Update is succesvol uitgeschakeld.
+echo.
+timeout /t 3 >nul
+goto systemSettings
+
+:enableRDP
+cls
+color 0e
+title RDP activeren
+echo.
+echo RDP wordt geactiveerd.
+
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
+
+color 0A
+cls
+echo.
+echo RDP is succesvol geactiveerd.
 echo.
 timeout /t 3 >nul
 goto systemSettings
