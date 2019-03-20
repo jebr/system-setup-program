@@ -82,11 +82,12 @@ echo          *                                                *
 echo          *       1. Gebruikers toevoegen                  *
 echo          *       2. Security Policy toepassen             *
 echo          *       3. Software verwijderen (Bloatware)      *
-echo          *       4. Systeem instellingen                  *
-echo          *       5. Systeem opnieuw opstarten             *
-echo          *       6. Help                                  *
+echo          *       4. Windows 10 - Disable tracking         *
+echo          *       5. Windows instelling                    *
+echo          *       6. Systeem opnieuw opstarten             *
+echo          *       7. Help                                  *
 echo          *                                                *
-echo          *       7. Applicatie Sluiten                    *
+echo          *       8. Applicatie Sluiten                    *
 echo          *                                                *
 echo          *                                                *
 echo          **************************************************
@@ -95,10 +96,11 @@ set /p menu="Maak je keuze: "
 if "%menu%"=="1" goto addUsers
 if "%menu%"=="2" goto addSecpol
 if "%menu%"=="3" goto removeBloatware
-if "%menu%"=="4" goto systemSettings
-if "%menu%"=="5" goto restart
-if "%menu%"=="6" goto help
-if "%menu%"=="7" goto end
+if "%menu%"=="4" goto disableWinTracking
+if "%menu%"=="5" goto windowsSettings
+if "%menu%"=="6" goto restart
+if "%menu%"=="7" goto help
+if "%menu%"=="8" goto end
 if "%menu%"==" " goto menu
 goto menu
 
@@ -236,13 +238,14 @@ echo.
 set powershellEnable=%~dp0\EnablePowershell.ps1
 set deleteBloatware=%~dp0\Windows10Debloater.ps1
 
-::Check if file secpol.inf exists
+::Check if file exists
 if not exist %powershellEnable% goto error_powershell_enable
 if not exist %deleteBloatware% goto error_delete_bloatware
 goto enable_powershell
 
 :enable_powershell
 cls
+::Powershell uitvoeren als Administrator
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& '%powershellEnable%'"
 echo.
 echo Powershell is nu geactiveerd.
@@ -251,6 +254,7 @@ goto start_remove_bloatware
 
 :start_remove_bloatware
 cls
+::Powersheel uitvoeren als Administrator
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& '%deleteBloatware%'"
 goto menu
 
@@ -300,8 +304,46 @@ echo.
 timeout /t 3 >nul
 goto menu
 
+:disableWinTracking
+cls
+color 0e
+title Software verwijderen
+echo.
+echo Het programma voor het verwijderen van software wordt nu gestart.
+echo.
+::Check if file DisableWinTracking_v3.2.3.exe exists
+if not exist %~dp0\DisableWinTracking_v3.2.3.exe goto error_disableWinTracking
+goto start_disableWintracking
 
-:systemSettings
+:start_disableWintracking
+cls
+start DisableWinTracking_v3.2.3.exe
+goto menu
+
+:error_disableWinTracking
+::File DisableWinTracking_v3.2.3.exe not found
+cls
+::zwart/rood
+color 0c
+title ERROR
+echo.
+echo          **************************************************
+echo          *                  -- ERROR --                   *
+echo          **************************************************
+echo          *                                                *
+echo          *   DisableWinTracking_v3.2.3.exe niet gevonden! *
+echo          *                                                *
+echo          *       Plaats het bestand in dezelfde map       *
+echo          *       als het script.                          *
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          **************************************************
+echo.
+timeout /t 3 >nul
+goto menu
+
+:windowsSettings
 cls
 color 0e
 title Systeem Instellingen
@@ -317,9 +359,8 @@ echo          *       3. Windows Recovery uitschakelen         *
 echo          *       4. Windows search/index uitschakelen     *
 echo          *       5. Windows Update uitschakelen           *
 echo          *       6. RDP activeren                         *
-echo          *       7. Windows 10 - Disable tracking         *
 echo          *                                                *
-echo          *       8. Terug naar het Hoofdmenu              *
+echo          *       7. Terug naar het Hoofdmenu              *
 echo          *                                                *
 echo          *                                                *
 echo          **************************************************
@@ -331,10 +372,9 @@ if "%menu1%"=="3" goto recovery
 if "%menu1%"=="4" goto windowsSearch
 if "%menu1%"=="5" goto windowsUpdate
 if "%menu1%"=="6" goto enableRDP
-if "%menu1%"=="7" goto disableWinTracking
-if "%menu1%"=="8" goto menu
-if "%menu1%"==" " goto systemSettings
-goto systemSettings
+if "%menu1%"=="7" goto menu
+if "%menu1%"==" " goto windowsSettings
+goto windowsSettings
 
 :firewallsettings
 cls
@@ -360,7 +400,7 @@ echo          **************************************************
 echo.
 set /p menu1="Maak je keuze: "
 if "%menu1%"=="1" goto ping
-if "%menu1%"=="7" goto systemSettings
+if "%menu1%"=="7" goto windowsSettings
 if "%menu1%"==" " goto firewallsettings
 goto firewallsettings
 
@@ -408,8 +448,8 @@ set /p menu1="Maak je keuze: "
 if "%menu1%"=="1" goto eneryLock
 if "%menu1%"=="2" goto energyFull
 if "%menu1%"=="7" goto menu
-if "%menu1%"==" " goto systemSettings
-goto systemSettings
+if "%menu1%"==" " goto windowsSettings
+goto windowsSettings
 
 :eneryLock
 echo Energiebeheer wordt nu aangepast.
@@ -431,7 +471,7 @@ echo.
 powercfg -getactivescheme
 echo.
 timeout /t 3 >nul
-goto systemSettings
+goto windowsSettings
 
 :energyFull
 set powerconfigfull=%~dp0\energyFull.pow
@@ -450,7 +490,7 @@ echo.
 powercfg -getactivescheme
 echo.
 timeout /t 3 >nul
-goto systemSettings
+goto windowsSettings
 
 :error_energy
 ::File scheme.pow not found
@@ -491,7 +531,7 @@ echo.
 echo Windows Recovery is succesvol uitgeschakeld.
 echo.
 timeout /t 3 >nul
-goto systemSettings
+goto windowsSettings
 
 :windowsSearch
 cls
@@ -508,7 +548,7 @@ echo.
 echo Windows Search/Index is succesvol uitgeschakeld.
 echo.
 timeout /t 3 >nul
-goto systemSettings
+goto windowsSettings
 
 
 :windowsUpdate
@@ -527,7 +567,7 @@ echo.
 echo Windows Update is succesvol uitgeschakeld.
 echo.
 timeout /t 3 >nul
-goto systemSettings
+goto windowsSettings
 
 :enableRDP
 cls
@@ -546,12 +586,7 @@ echo.
 echo RDP is succesvol geactiveerd.
 echo.
 timeout /t 3 >nul
-goto systemSettings
-
-:disableWinTracking
-start DisableWinTracking_v3.2.3.exe
-goto systemSettings
-
+goto windowsSettings
 
 :restart
 cls
