@@ -87,7 +87,7 @@ echo          *       5. Windows instelling                    *
 echo          *       6. Systeem opnieuw opstarten             *
 echo          *       7. Help                                  *
 echo          *                                                *
-echo          *       8. Applicatie Sluiten                    *
+echo          *       8. Applicatie sluiten                    *
 echo          *                                                *
 echo          *                                                *
 echo          **************************************************
