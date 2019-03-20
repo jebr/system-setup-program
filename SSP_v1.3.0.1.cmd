@@ -600,8 +600,8 @@ echo          **************************************************
 echo          *                  -- LET OP --                  *
 echo          **************************************************
 echo          *                                                *
-echo          *       De computernaam moet aan de volgende     *
-echo          *       voorwaarden voldoen                      *
+echo          *       De computernaam kan alleen worden        *
+echo          *       samengesteld met de volgende tekens:     *
 echo          *                                                *
 echo          *        - Letters van a tot Z                   *
 echo          *        - Getallen van 0 tot 9                  *
