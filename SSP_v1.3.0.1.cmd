@@ -359,8 +359,9 @@ echo          *       3. Windows Recovery uitschakelen         *
 echo          *       4. Windows search/index uitschakelen     *
 echo          *       5. Windows Update uitschakelen           *
 echo          *       6. RDP activeren                         *
+echo          *       7. Computernaam aanpassen                *
 echo          *                                                *
-echo          *       7. Terug naar het Hoofdmenu              *
+echo          *       8. Terug naar het Hoofdmenu              *
 echo          *                                                *
 echo          *                                                *
 echo          **************************************************
@@ -372,7 +373,8 @@ if "%menu1%"=="3" goto recovery
 if "%menu1%"=="4" goto windowsSearch
 if "%menu1%"=="5" goto windowsUpdate
 if "%menu1%"=="6" goto enableRDP
-if "%menu1%"=="7" goto menu
+if "%menu1%"=="7" goto changeHostname
+if "%menu1%"=="8" goto menu
 if "%menu1%"==" " goto windowsSettings
 goto windowsSettings
 
@@ -588,6 +590,42 @@ echo.
 timeout /t 3 >nul
 goto windowsSettings
 
+:changeHostname
+cls
+title Change Hostname
+color 0c
+title ERROR
+echo.
+echo          **************************************************
+echo          *                  -- LET OP --                  *
+echo          **************************************************
+echo          *                                                *
+echo          *       De computernaam moet aan de volgende     *
+echo          *       voorwaarden voldoen                      *
+echo          *                                                *
+echo          *        - Letters van a tot Z                   *
+echo          *        - Getallen van 0 tot 9                  *
+echo          *        - Een -                                 *
+echo          *        - De computernaam mag niet beginnen     *
+echo          *          met een -                             *
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          **************************************************
+echo.
+color 0e
+echo De computernaam is nu %computername%
+echo.
+set /p new_hostname="Verander de computernaam naar: "
+WMIC ComputerSystem where Name="%computername%" call Rename Name="%new_hostname%" >nul
+timeout /t 3 >nul
+cls
+color 0e
+echo.
+echo De computernaam is nu aangepast naar %new_hostname%
+timeout /t 3 >nul
+goto windowsSettings
+
 :restart
 cls
 set menu=
@@ -596,14 +634,18 @@ set users=
 set menu1=
 set powerconfig=
 set menu2=
+set new_hostname=
 del %~dp0\users.csv /f /q >nul
 del %~dp0\secpol.inf /f /q >nul
-del %~dp0\scheme.pow /f /q >nul
+del %~dp0\energyAutoLock.pow /f /q >nul
+del %~dp0\energyFull.pow /f /q >nul
 del %~dp0\help.txt /f /q >nul
 del %~dp0\voorbeeld_users.csv /f /q >nul
 del %~dp0\Changelog.txt /f /q >nul
-del %~dp0\DisableWinTracking_v3.2.1.exe /f /q >nul
+del %~dp0\DisableWinTracking_v3.2.3.exe /f /q >nul
 del %~dp0\dwt.log /f /q >nul
+del %~dp0\EnablePowershell.ps1 /f /q >nul
+del %~dp0\Windows10Debloater.ps1 /f /q >nul
 cls
 color 0e
 title Systeem herstarten
@@ -668,6 +710,7 @@ set users=
 set menu1=
 set powerconfig=
 set menu2=
+set new_hostname=
 del %~dp0\users.csv /f /q >nul
 del %~dp0\secpol.inf /f /q >nul
 del %~dp0\energyAutoLock.pow /f /q >nul
