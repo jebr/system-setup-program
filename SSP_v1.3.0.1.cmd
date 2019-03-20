@@ -317,7 +317,7 @@ goto start_disableWintracking
 
 :start_disableWintracking
 cls
-start DisableWinTracking_v3.2.3.exe
+start %~dp0\DisableWinTracking_v3.2.3.exe
 goto menu
 
 :error_disableWinTracking
