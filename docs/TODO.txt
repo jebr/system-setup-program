@@ -5,3 +5,4 @@
 - SSP  afsluiten blokkeren
 - Aanpassen locatie op scherm batch programma
 - Bestanden in %temp% plaatsen na stareten programma
+- Controleren op ingevoerde hostname
