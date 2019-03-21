@@ -1,4 +1,4 @@
-![logo](https://i.imgur.com/TQi9rJd.png)  
+![logo](https://i.imgur.com/yOU6O6L.png)  
 # System Setup Program (SSP) 
 
 A tool that I made to setup a Windows system.
@@ -35,4 +35,17 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
 ## TODO
 - [x] Launch version v1.0.0.7
 - [x] Rewrite ReadMe
+- [ ] BG info toevoegen
+- [ ] Wallpaper maken Safety & Security
+- [ ] Wallpaper activeren voor lockscreen en bureaublad
+- [ ] BG info toevoegen
+- [ ] SSP  afsluiten blokkeren
+- [ ] Aanpassen locatie op scherm batch programma
+- [ ] Bestanden in %temp% plaatsen na stareten programma
+- [ ] Controleren op ingevoerde hostname
 - [ ] Your wishes :smiley:
+- [ ] IP-adres instellen
+- [ ] Windows updates starten
+- [ ] Koppelingen werkbalk verwijderen
+- [ ] Opties snelle toegang -> privacy uitzetten
+- [ ] Map opties 'Extensies voor bekende bestandstypen' uitschakelen
