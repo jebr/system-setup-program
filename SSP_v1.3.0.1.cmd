@@ -678,6 +678,8 @@ del %~dp0\DisableWinTracking_v3.2.3.exe /f /q >nul
 del %~dp0\dwt.log /f /q >nul
 del %~dp0\EnablePowershell.ps1 /f /q >nul
 del %~dp0\Windows10Debloater.ps1 /f /q >nul
+del %~dp0\Gebruikershandleiding Disable Windows tracking.pdf /f /q >nul
+del %~dp0\Gebruikershandleiding Software verwijderen Windows 10.pdf /f /q >nul
 cls
 color 0e
 title Systeem herstarten
@@ -755,4 +757,6 @@ del %~dp0\DisableWinTracking_v3.2.3.exe /f /q >nul
 del %~dp0\dwt.log /f /q >nul
 del %~dp0\EnablePowershell.ps1 /f /q >nul
 del %~dp0\Windows10Debloater.ps1 /f /q >nul
+del %~dp0\Gebruikershandleiding Disable Windows tracking.pdf /f /q >nul
+del %~dp0\Gebruikershandleiding Software verwijderen Windows 10.pdf /f /q >nul
 exit
