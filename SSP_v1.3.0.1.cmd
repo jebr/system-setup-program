@@ -644,9 +644,11 @@ echo.
 color 0e
 echo De computernaam is nu %computername%
 echo.
-set /p new_hostname="Verander de computernaam naar: "
-if "%new_hostname%"==" " echo Deze computernaam is niet toegestaan
-if "%new_hostname%"==" " goto changeHostname
+set /p new_hostname="Nieuwe computernaam: "
+if "%new_hostname%"=="" cls
+if "%new_hostname%"=="" echo Deze computernaam is niet toegestaan
+timeout /t 2 >nul
+if "%new_hostname%"=="" goto changeHostname
 WMIC ComputerSystem where Name="%computername%" call Rename Name="%new_hostname%" >nul
 timeout /t 3 >nul
 cls
