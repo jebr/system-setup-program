@@ -49,7 +49,7 @@
 (_) Aanpassingen in de programmastructuur
 
 ##### Release 1.3.0.1 #####
-##### unknown  #####
+##### 21-3-2019  #####
 (_) Aanpassingen in de programmastructuur
 (+) RDP activeren
 (+) Aanpassen computernaam
