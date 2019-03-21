@@ -57,8 +57,33 @@ title System Setup Program v1.3.0.1
 
 :start
 cls
-color 0e
-goto help
+::zwart/rood
+mode con:cols=67 lines=30
+color 0c
+title Welkom
+cls
+echo.
+echo          **************************************************
+echo          *                 -- LET OP --                   *
+echo          **************************************************
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          *       Lees voor gebruik de handleiding         *
+echo          *                                                *
+echo          *                                                *
+echo          *       1. Handleiding openen                    *
+echo          *                                                *
+echo          *       2. Applicatie starten                    *
+echo          *                                                *
+echo          **************************************************
+echo.
+set /p menu="Maak je keuze: "
+if "%menu%"=="1" goto help
+if "%menu%"=="2" goto menu
+if "%menu%"==" " goto start
+goto start
+
 
 :menu
 set menu=
@@ -69,7 +94,6 @@ set powerconfig=
 set menu2=
 set powershellEnable=
 set deleteBloatware=
-
 mode con:cols=67 lines=30
 color 0e
 title Hoofdmenu
@@ -669,7 +693,8 @@ if not exist %~dp0\help.txt goto error_help
 goto show_help
 
 :show_help
-mode con:cols=80 lines=70
+mode con:cols=67 lines=30
+::mode con:cols=80 lines=70
 title: Help
 type %~dp0\help.txt
 color 0a
