@@ -41,11 +41,11 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
 - [ ] BG info toevoegen
 - [ ] SSP  afsluiten blokkeren
 - [ ] Aanpassen locatie op scherm batch programma
-- [ ] Bestanden in %temp% plaatsen na stareten programma
+- [ ] Bestanden in %temp% plaatsen na starten programma
 - [ ] Controleren op ingevoerde hostname
-- [ ] Your wishes :smiley:
-- [ ] IP-adres instellen
+- [ ] IP-adres instellen via programma
 - [ ] Windows updates starten
 - [ ] Koppelingen werkbalk verwijderen
 - [ ] Opties snelle toegang -> privacy uitzetten
 - [ ] Map opties 'Extensies voor bekende bestandstypen' uitschakelen
+- [ ] Your wishes :smiley:
