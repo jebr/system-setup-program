@@ -159,7 +159,9 @@ goto set_group
 
 :set_group
 ::Set Group for Servicehut
+NET LOCALGROUP "Administrators" "Heijmans" /add >nul
 NET LOCALGROUP "Administrators" "Servicehut" /add >nul
+NET LOCALGROUP "Gebruikers" "Heijmans" /delete >nul
 NET LOCALGROUP "Gebruikers" "Servicehut" /delete >nul
 timeout /t 1 >nul
 goto complete_msg
