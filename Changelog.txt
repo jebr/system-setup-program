@@ -54,3 +54,7 @@
 (+) RDP activeren
 (+) Aanpassen computernaam
 (+) Nieuw logo
+
+##### Release 1.3.0.2 #####
+##### 21-3-2019  #####
+(+) Verwijderen handleidingen na sluiten applicatie
