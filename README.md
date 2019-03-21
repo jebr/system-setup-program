@@ -35,7 +35,7 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
 ## TODO
 - [x] Launch version v1.0.0.7
 - [x] Rewrite ReadMe
-- [ ] BG info toevoegen
+- [ ] BG info toevoegen aan programma
 - [ ] Wallpaper maken Safety & Security
 - [ ] Wallpaper activeren voor lockscreen en bureaublad
 - [ ] BG info toevoegen
