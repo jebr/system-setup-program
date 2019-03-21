@@ -53,3 +53,4 @@
 (_) Aanpassingen in de programmastructuur
 (+) RDP activeren
 (+) Aanpassen computernaam
+(+) Nieuw logo
