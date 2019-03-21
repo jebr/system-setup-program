@@ -8,6 +8,9 @@
 ::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+pWGGJ8iQ/QbvTCg=
 ::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+o3eAJdTSsBz3Kg==
 ::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+oGuKJcWZtgPldV2a41kjVWZnkQM=
+::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+pGGWONKOsArydmyA9UoyF2BDjm3knio4a9pmnfwVgG7ssh6xmr0VsQ==
+::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+pGGWONKOsArydm2H50k8HlV7kGbCnyM+bN8mitBSsw==
+::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+pGGWONKOsArydn+A6E8/DHYl10fVjic0YcdtiI0TwHHe
 ::YAwzoRdxOk+EWAjk
 ::fBw5plQjdCyDJGyX8VAjFDFRXguHMleVCLA4+uHt6tajp1sYWO0vdYrVzoi9OfMH70ipRpM5w2oXqNkDCwlZc1+YXT8IqH1Rs3CWC/Svg0HoSUfp
 ::YAwzuBVtJxjWCl3EqQJgSA==
@@ -34,7 +37,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFDFRXguHMleVCLA4+uHt6tajp1sYWO0vdYrVzoi9OfMH70ipRpM5w2oXqNkDCwlZc1+YXT8Iml1yiXLUeZXS40GwBE2R4ys=
+::Zh4grVQjdCyDJGyX8VAjFDFRXguHMleeA6YX/Ofr09m0knILBaxsNt+Vi/qLOOVz
 ::YB416Ek+ZW8=
 ::
 ::
@@ -642,6 +645,8 @@ color 0e
 echo De computernaam is nu %computername%
 echo.
 set /p new_hostname="Verander de computernaam naar: "
+if "%new_hostname%"==" " echo Deze computernaam is niet toegestaan
+if "%new_hostname%"==" " goto changeHostname
 WMIC ComputerSystem where Name="%computername%" call Rename Name="%new_hostname%" >nul
 timeout /t 3 >nul
 cls
