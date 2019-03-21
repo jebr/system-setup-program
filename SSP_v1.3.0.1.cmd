@@ -1,17 +1,18 @@
 ::[Bat To Exe Converter]
 ::
-::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIk45+vu4u+Jtl4hc+srUJrZ5oeXM/QW5wjXcII4xjdqisQLHhpVMyGYXjMXoW9MsWGJOMDSpxf1Kg==
-::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIk45+vu4u+Jtl4hc+srUJrZ5oeXM/QW5wjXcII4xjdqisQLHhpVMyGYXjMQoH1DtGiAAM6Shx3gSUOA6EwPDTY61S2Dwi4jZbM=
-::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIk45+vu4u+Jtl4hc+srUJrZ5oeXM/QW5wjXcII4xjdqisQLHhpVMyGYXjMxp2tQsX2kItOTnwDiQQaZ6VxQ
-::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIk45+vu4u+Jtl4hc+srUJrZ5oeXM/QW5wjXcII4xjdqisQLHhpVMyGYXjMxp2tQsX2jIsuQ/R/uXSg=
-::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIk45+vu4u+Jtl4hc+srUJrZ5oeXM/QW5wjXcII4xjdqisQLHhpVMyGYXjM8rGJS+HCdI6c=
-::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIk45+vu4u+Jtl4hc+srUJrZ5oeXM/QW5wjXcII4xjdqisQLHhpVMyGYXjMnrG1SuWjLPsma0w==
-::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIk45+vu4u+Jtl4hc+srUJrZ5oeXM/QW5wjXcII4xjdqisQLHhpVMyGYXjMhumtQpSqGJNH8
-::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIk45+vu4u+Jtl4hc+srUJrZ5oeXM/QW5wjXcII4xjdqisQLHhpVMyGYXjMipmFQtGGAO8OjphzkWFvH5Vgmew==
-::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIk45+vu4u+Jtl4hc+srUJrZ5oeXM/QW5wjXcII4xjdqisQLHhpVMyGYXjMRp29AumG1ONCZoRzpT0SFqFsjSgU=
-::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIk45+vu4u+Jtl4hc+srUJrZ5oeXM/QW5wjXcII4xjdqisQLHhpVMyGYXjMDoGBGuXOWZpe4tg3tRUmd41l+C3Yl5w==
+::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+smuGJPu7tg3zX0GC41kjE2R6g2/VhS8ybtQovsoQ0iKy+Q3IlqsU3m/sHr0cFGDqyKJvdtkE+2o=
+::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+smuGJPu7tg3zX0GC41kjE2R6g2/VhS8ybtQoqcwFxze/7ki/iaACxnH1WqwcEG2h9qVmPMYX7krlOAfYnrU1
+::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+s2qAJcCFkhr1RWSG5UB+C2pj5w==
+::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+s2qAJcCFlRrtRgaZ6VxQ
+::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+vmGJJ4mIqxuB
+::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+pWGGJ8iQ/QbvTCg=
+::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+o3eAJdTSsBz3Kg==
+::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+oGuKJcWZtgPldV2a41kjVWZnkQM=
+::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+pGGWONKOsArydmyA9UoyF2BDjm3knio4a9pmnfwVgG7ssh6xmr0VsQ==
+::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+pGGWONKOsArydm2H50k8HlV7kGbCnyM+bN8mitBSsw==
+::fBE1pAF6MU+EWHreyHcjLQlHcC6HLmS/CIkz5u3f/eORp3E5UfQ6dIDL17GANNwg81bwcJtg5X9OjdtBPAlXeQCqY0IHml5+pGGWONKOsArydn+A6E8/DHYl10fVjic0YcdtiI0TwHHe
 ::YAwzoRdxOk+EWAjk
-::fBw5plQjdCyDJGyX8VAjFDFRXguHMleeCbYJ5e31+/m7hUQJfPc9RLzCyaCLLa0g71HxZdsdxHVdisoBQShrTi6YXT8LpWFFuSqMNMj8
+::fBw5plQjdCyDJGyX8VAjFDFRXguHMleVCLA4+uHt6tajp1sYWO0vdYrVzoi9OfMH70ipRpM5w2oXqNkDCwlZc1+YXT8IqH1Rs3CWC/Svg0HoSUfp
 ::YAwzuBVtJxjWCl3EqQJgSA==
 ::ZR4luwNxJguZRRnk
 ::Yhs/ulQjdF+5
@@ -24,8 +25,8 @@
 ::dAsiuh18IRvcCxnZtBJQ
 ::cRYluBh/LU+EWAnk
 ::YxY4rhs+aU+IeA==
-::cxY6rQJ7JhzQF1fEqQJhZkkaHErTXA==
-::ZQ05rAF9IBncCkqN+0xwdVsFAlbMbCXrZg==
+::cxY6rQJ7JhzQF1fEqQJhZkgaHErTXA==
+::ZQ05rAF9IBncCkqN+0xwdVsFAlfMbCXrZg==
 ::ZQ05rAF9IAHYFVzEqQIDGys0
 ::eg0/rx1wNQPfEVWB+kM9LVsJDDebL3+/C/Uv7fzu/6q3sEIaRuMyGA==
 ::fBEirQZwNQPfEVWB+kM9LVsJDDexDAs=
@@ -36,7 +37,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFDFRXguHMleeCbYJ5e31+/m7hUQJfPc9RLzCyaCLLa0g71HxZdsdxHVdisoBQShrTi6YXT8Lvz8M5CrVeZbSthfkKg==
+::Zh4grVQjdCyDJGyX8VAjFDFRXguHMleeA6YX/Ofr09m0knILBaxsNt+Vi/qLOOVz
 ::YB416Ek+ZW8=
 ::
 ::
@@ -643,7 +644,11 @@ echo.
 color 0e
 echo De computernaam is nu %computername%
 echo.
-set /p new_hostname="Verander de computernaam naar: "
+set /p new_hostname="Nieuwe computernaam: "
+if "%new_hostname%"=="" cls
+if "%new_hostname%"=="" echo Deze computernaam is niet toegestaan
+timeout /t 2 >nul
+if "%new_hostname%"=="" goto changeHostname
 WMIC ComputerSystem where Name="%computername%" call Rename Name="%new_hostname%" >nul
 timeout /t 3 >nul
 cls
