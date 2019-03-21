@@ -76,6 +76,7 @@ echo          *       1. Handleiding openen                    *
 echo          *                                                *
 echo          *       2. Applicatie starten                    *
 echo          *                                                *
+echo          *                                                *
 echo          **************************************************
 echo.
 set /p menu="Maak je keuze: "
