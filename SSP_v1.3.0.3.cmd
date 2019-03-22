@@ -276,7 +276,7 @@ goto enable_powershell
 :enable_powershell
 cls
 ::Powershell uitvoeren als Administrator
-PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& '%powershellEnable%'"
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& '%powershellEnable%'" >nul
 echo.
 echo Powershell is nu geactiveerd.
 timeout /t 3 >nul
@@ -285,7 +285,7 @@ goto start_remove_bloatware
 :start_remove_bloatware
 cls
 ::Powersheel uitvoeren als Administrator
-PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& '%deleteBloatware%'"
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& '%deleteBloatware%'" >nul
 goto menu
 
 :error_powershell_enable
