@@ -8,7 +8,7 @@ Een programma voor het instellen van Windows 10.
 ## DOWNLOAD
 [DOWNLOAD PROGRAMMA](https://github.com/jebr/SSP/releases/)
 
-**Note:** Het gebruik van dit script is voor eigen risico. Ik ga ervan uit dat je weet waar je mee bezig bent.
+**Note:** Het gebruik van dit script is voor eigen risico. Ik ga ervan uit dat je weet waar je mee bezig bent :wink:
 
 ## Hoe te gebruiken
 **Dit script moet uitgevoerd worden als Administrator.**
