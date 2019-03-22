@@ -1,5 +1,5 @@
 ## TODO
-- [ ] Herschrijven ReadMe
+- [+] Herschrijven ReadMe
 - [ ] BG info toevoegen
 - [ ] Wallpaper maken Safety & Security
 - [ ] Wallpaper activeren voor lockscreen en bureaublad
