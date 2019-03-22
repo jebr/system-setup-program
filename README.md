@@ -48,4 +48,6 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
 - [ ] Koppelingen werkbalk verwijderen
 - [ ] Opties snelle toegang -> privacy uitzetten
 - [ ] Map opties 'Extensies voor bekende bestandstypen' uitschakelen
+- [ ] Firefox installatie
+- [ ] NTP server (Tardis)
 - [ ] Your wishes :smiley:
