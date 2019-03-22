@@ -6,7 +6,7 @@ Een programma voor het instellen van Windows 10.
 ![screenshot](https://i.imgur.com/zroTWUe.png)
 
 ## DOWNLOAD
-[DOWNLOAD EXE HIER](https://github.com/jebr/SSP/releases/)
+[DOWNLOAD PROGRAMMA](https://github.com/jebr/SSP/releases/)
 
 **Note:** Het gebruik van dit script is voor eigen risico. Ik ga ervan uit dat je weet waar je mee bezig bent.
 
