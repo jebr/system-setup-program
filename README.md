@@ -3,7 +3,7 @@
 
 Een programma voor het instellen van Windows 10.
 
-![screenshot](https://i.imgur.com/zroTWUe.png)
+![Screenshot](screenshot_v1.3.0.2.png?raw=true "SSP Hoofdmenu")
 
 ## DOWNLOAD
 [DOWNLOAD PROGRAMMA](https://github.com/jebr/SSP/releases/)
