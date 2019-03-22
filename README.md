@@ -1,4 +1,4 @@
-![logo](https://i.imgur.com/yOU6O6L.png)  
+![Logo](assets/SSP_64x64.png?raw=true "Logo SSP")
 # System Setup Program (SSP) 
 
 Een programma voor het instellen van Windows 10.
