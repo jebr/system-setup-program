@@ -1,6 +1,5 @@
 ## TODO
-- [x] Launch version v1.0.0.7
-- [x] Rewrite ReadMe
+- [ ] Herschrijven ReadMe
 - [ ] BG info toevoegen
 - [ ] Wallpaper maken Safety & Security
 - [ ] Wallpaper activeren voor lockscreen en bureaublad
@@ -16,4 +15,7 @@
 - [ ] Map opties 'Extensies voor bekende bestandstypen' uitschakelen
 - [ ] Firefox installatie
 - [ ] NTP server (Tardis)
+- [ ] Tegels uitzetten en verwijderen
+- [ ] Aanpaasingen Powershell DeBloater (Meldingen uitzetten)
+- [ ] Aanpassen DisableWintracking (aanvinken alle vakjes)
 - [ ] Your wishes :smiley:
