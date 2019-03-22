@@ -34,4 +34,4 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
 
 ## TODO
 
-[Open TODO] (https://github.com/jebr/System-Setup-Program-SSP/blob/development/TODO.md)
+[Open TODO](https://github.com/jebr/System-Setup-Program-SSP/blob/development/TODO.md)
