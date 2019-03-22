@@ -1,37 +1,36 @@
 ![logo](https://i.imgur.com/yOU6O6L.png)  
 # System Setup Program (SSP) 
 
-A tool that I made to setup a Windows system.
+Een programma voor het instellen van Windows 10.
 
 ![screenshot](https://i.imgur.com/zroTWUe.png)
 
 ## DOWNLOAD
+[DOWNLOAD EXE HIER](https://github.com/jebr/SSP/releases/)
 
-[DOWNLOAD EXE HERE](https://github.com/jebr/SSP/releases/)
+**Note:** Het gebruik van dit script is voor eigen risico. Ik ga ervan uit dat je weet waar je mee bezig bent.
 
-**Note:** The use of this script is at your own risk. I assume that you know what you are doing.
+## Hoe te gebruiken
+**Dit script moet uitgevoerd worden als Administrator.**
 
-## How to Use
+Volg de instructies in de handleidingen. [Klik hier](help.txt) om de help tekst weer te geven.
 
-**You need to run it as administrator.**
-
-Just follow the instructions in the help section. [Click here](help.txt) to open the help section.
-
-## Program options
-1. Add users
-    * Use the user.csv to add Windows users
-2. Apply security policy
-    * Apply the added security policy
-3. Remove Windows 10 bloatware
+## Programma opties
+1. Toevoegen van gebruikers
+    * Gebruik de user.csv voor het toevoegen van Windows gebruikers
+2. Toepassen van security policy
+    * Toepassen van de aangemaakte security policy the added security policy
+3. Verwijderen van overbodige Windows 10 programma's
 	* [Windows 10 Debloater](https://github.com/Sycnex/Windows10Debloater)
-    * Firewall - Allow ICMPv4
-    * Change eneryplan with the added energyplan
-    * Disable Windows recovery
-    * Disable Windows search
-    * Disable Windows update
+4. Deactiveren van Windows tracking
     * [Disable Windows 10 tracking](https://github.com/10se1ucgo/DisableWinTracking/releases/)
-
+5. Windows instellingen aanpassen
+    * Firewall - Toestaan van ICMPv4
+    * Energieplan aanpassen (auto-lock / altijd aan)
+    * Windows Recovery uitschakelen
+    * Windows search/index uitschakelen
+    * Windows Update uitschakelen
+	* Computernaam aanpassen
 
 ## TODO
-
-[TODO versie 1.4.0.1](https://github.com/jebr/System-Setup-Program-SSP/blob/development/TODO.md)
+[TODO versie 1.4.0.1](TODO.md)
