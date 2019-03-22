@@ -33,21 +33,5 @@ Just follow the instructions in the help section. [Click here](help.txt) to open
 
 
 ## TODO
-- [x] Launch version v1.0.0.7
-- [x] Rewrite ReadMe
-- [ ] BG info toevoegen
-- [ ] Wallpaper maken Safety & Security
-- [ ] Wallpaper activeren voor lockscreen en bureaublad
-- [ ] BG info toevoegen
-- [ ] SSP  afsluiten blokkeren
-- [ ] Aanpassen locatie op scherm batch programma
-- [ ] Bestanden in %temp% plaatsen na starten programma
-- [ ] Controleren op ingevoerde hostname
-- [ ] IP-adres instellen via programma
-- [ ] Windows updates starten
-- [ ] Koppelingen werkbalk verwijderen
-- [ ] Opties snelle toegang -> privacy uitzetten
-- [ ] Map opties 'Extensies voor bekende bestandstypen' uitschakelen
-- [ ] Firefox installatie
-- [ ] NTP server (Tardis)
-- [ ] Your wishes :smiley:
+
+[Open TODO] (https://github.com/jebr/System-Setup-Program-SSP/blob/development/TODO.md)
