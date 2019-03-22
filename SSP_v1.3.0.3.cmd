@@ -153,7 +153,7 @@ goto add_users
 :add_users
 ::Add Users
 cls
-for /f "tokens=1-4 delims=; skip=1" %%a in (%users%) do (net user %%a %%b /add /active:yes /fullname:"%%c" /comment:"%%d" /expires:never /passwordchg:no) >nul
+for /f "tokens=1-4 delims=; skip=1" %%a in (%users%) do (net user %%a %%b /add /active:yes /fullname:"%%c" /comment:"%%d" /expires:never /passwordchg:yes) >nul
 for /f "tokens=1-4 delims=; skip=1" %%a in (%users%) do  WMIC USERACCOUNT WHERE "Name='%%a'" SET PasswordExpires=FALSE >nul
 timeout /t 1 >nul
 goto set_group
@@ -164,6 +164,8 @@ NET LOCALGROUP "Administrators" "Heijmans" /add >nul
 NET LOCALGROUP "Administrators" "Servicehut" /add >nul
 NET LOCALGROUP "Gebruikers" "Heijmans" /delete >nul
 NET LOCALGROUP "Gebruikers" "Servicehut" /delete >nul
+NET LOCALGROUP "Users" "Heijmans" /delete >nul
+NET LOCALGROUP "Users" "Servicehut" /delete >nul
 timeout /t 1 >nul
 goto complete_msg
 
