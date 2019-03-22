@@ -1,0 +1,1 @@
+Windows10SysPrepDebloater.ps1 -Sysprep, -Debloat -Privacy and -StopEdgePDF

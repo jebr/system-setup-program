@@ -19,7 +19,7 @@ Volg de instructies in de handleidingen. [Klik hier](help.txt) om de help tekst 
 1. Toevoegen van gebruikers
     * Gebruik de user.csv voor het toevoegen van Windows gebruikers
 2. Toepassen van security policy
-    * Toepassen van de aangemaakte security policy the added security policy
+    * Toepassen van de aangemaakte security policy
 3. Verwijderen van overbodige Windows 10 programma's
 	* [Windows 10 Debloater](https://github.com/Sycnex/Windows10Debloater)
 4. Deactiveren van Windows tracking

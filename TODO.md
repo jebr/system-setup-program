@@ -16,6 +16,6 @@
 - [ ] Firefox installatie
 - [ ] NTP server (Tardis)
 - [ ] Tegels uitzetten en verwijderen
-- [ ] Aanpaasingen Powershell DeBloater (Meldingen uitzetten)
+- [ ] Aanpassingen Powershell DeBloater (Meldingen uitzetten)
 - [ ] Aanpassen DisableWintracking (aanvinken alle vakjes)
 - [ ] Your wishes :smiley:
