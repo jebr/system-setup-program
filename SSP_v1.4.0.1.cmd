@@ -96,6 +96,8 @@ set powerconfig=
 set menu2=
 set powershellEnable=
 set deleteBloatware=
+set new_hostname=
+set ntp_server=
 mode con:cols=67 lines=30
 color 0e
 title Hoofdmenu
@@ -390,8 +392,9 @@ echo          *       4. Windows search/index uitschakelen     *
 echo          *       5. Windows Update uitschakelen           *
 echo          *       6. RDP activeren                         *
 echo          *       7. Computernaam aanpassen                *
+echo          *       8. NTP client instellen                  *
 echo          *                                                *
-echo          *       8. Terug naar het Hoofdmenu              *
+echo          *       10. Terug naar het Hoofdmenu             *
 echo          *                                                *
 echo          *                                                *
 echo          **************************************************
@@ -404,7 +407,8 @@ if "%menu1%"=="4" goto windowsSearch
 if "%menu1%"=="5" goto windowsUpdate
 if "%menu1%"=="6" goto enableRDP
 if "%menu1%"=="7" goto changeHostname
-if "%menu1%"=="8" goto menu
+if "%menu1%"=="8" goto setNTP
+if "%menu1%"=="10" goto menu
 if "%menu1%"==" " goto windowsSettings
 goto windowsSettings
 
@@ -622,9 +626,8 @@ goto windowsSettings
 
 :changeHostname
 cls
-title Change Hostname
-color 0c
-title ERROR
+title Hostname aanpassen
+color 0e
 echo.
 echo          **************************************************
 echo          *                  -- LET OP --                  *
@@ -660,6 +663,39 @@ echo De computernaam is nu aangepast naar %new_hostname%
 timeout /t 3 >nul
 goto windowsSettings
 
+:setNTP
+cls
+title Instellen NTP client
+color 0e
+echo.
+echo          **************************************************
+echo          *                  NTP Client                    *
+echo          **************************************************
+echo          *                                                *
+echo          *       Stel het IP-adres in van de NTP server   *
+echo          *                                                *
+echo          *       De synchronisatietijd zal ingesteld       *
+echo          *       worden op 1 keer per uur.                *
+echo          *                                                *
+echo          *                                                *
+echo          *                                                *
+echo          **************************************************
+echo.
+color 0e
+set /p ntp_server="IP-adres NTP server: "
+if "%ntp_server%"=="" cls
+if "%ntp_server%"=="" echo Het IP-adres moet ingevuld worden
+timeout /t 2 >nul
+if "%ntp_server%"=="" goto setNTP
+WMIC ComputerSystem where Name="%computername%" call Rename Name="%new_hostname%" >nul
+timeout /t 3 >nul
+cls
+color 0e
+echo.
+echo De NTP client is ingesteld op %ntp_server%
+timeout /t 3 >nul
+goto windowsSettings
+
 :restart
 cls
 set menu=
@@ -669,6 +705,7 @@ set menu1=
 set powerconfig=
 set menu2=
 set new_hostname=
+set ntp_server=
 del %~dp0\users.csv /f /q >nul
 del %~dp0\secpol.inf /f /q >nul
 del %~dp0\energyAutoLock.pow /f /q >nul
