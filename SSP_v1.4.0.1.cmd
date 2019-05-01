@@ -47,6 +47,7 @@
 :: __ / / _ )/ __/
 ::/ // / _  |\ \  
 ::\___/____/___/ 
+::https://github.com/jebr
 
 
 @echo off
@@ -54,7 +55,7 @@ setlocal enabledelayedexpansion
 mode con:cols=67 lines=30
 ::zwart/geel
 color 0e
-title System Setup Program v1.3.0.1
+title Windows Deployment Tool v1.4.0.1
 
 :start
 cls
@@ -392,7 +393,7 @@ echo          *       4. Windows search/index uitschakelen     *
 echo          *       5. Windows Update uitschakelen           *
 echo          *       6. RDP activeren                         *
 echo          *       7. Computernaam aanpassen                *
-echo          *       8. NTP client instellen                  *
+echo          *       8. NTP server instellen                  *
 echo          *                                                *
 echo          *       10. Terug naar het Hoofdmenu             *
 echo          *                                                *
@@ -407,7 +408,7 @@ if "%menu1%"=="4" goto windowsSearch
 if "%menu1%"=="5" goto windowsUpdate
 if "%menu1%"=="6" goto enableRDP
 if "%menu1%"=="7" goto changeHostname
-if "%menu1%"=="8" goto setNTP
+if "%menu1%"=="8" goto NTP
 if "%menu1%"=="10" goto menu
 if "%menu1%"==" " goto windowsSettings
 goto windowsSettings
@@ -663,7 +664,7 @@ echo De computernaam is nu aangepast naar %new_hostname%
 timeout /t 3 >nul
 goto windowsSettings
 
-:setNTP
+:NTP
 cls
 title Instellen NTP client
 color 0e
@@ -674,8 +675,8 @@ echo          **************************************************
 echo          *                                                *
 echo          *       Stel het IP-adres in van de NTP server   *
 echo          *                                                *
-echo          *       De synchronisatietijd zal ingesteld       *
-echo          *       worden op 1 keer per uur.                *
+echo          *       De tijd zal elke 15 minuten              *
+echo          *       gesynchroniseerd worden.                 *
 echo          *                                                *
 echo          *                                                *
 echo          *                                                *
@@ -683,18 +684,44 @@ echo          **************************************************
 echo.
 color 0e
 set /p ntp_server="IP-adres NTP server: "
-if "%ntp_server%"=="" cls
-if "%ntp_server%"=="" echo Het IP-adres moet ingevuld worden
-timeout /t 2 >nul
-if "%ntp_server%"=="" goto setNTP
-WMIC ComputerSystem where Name="%computername%" call Rename Name="%new_hostname%" >nul
-timeout /t 3 >nul
+if "%ntp_server%"==" " goto NTP
+goto setNTP
+
+:setNTP
 cls
-color 0e
 echo.
-echo De NTP client is ingesteld op %ntp_server%
+echo De NTP server zal ingesteld worden op %ntp_server%.
+echo De tijd zal om de 15 minuten gesynchroniseerd worden.
+echo.
+
+:: 1. Change the server type to NTP
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters" /v Type /t REG_SZ /d NTP /f >nul
+
+:: 2. Set announce flags
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config" /v AnnounceFlags /t REG_DWORD /d 5 /f >nul
+
+:: 3.  Enable NTP server (nog testen)
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpServer" /v Enabled /t REG_DWORD /d 1 /f >nul
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient" /v Enabled /t REG_DWORD /d 1 /f >nul
+
+:: 4. Specify the time sources
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters" /v NtpServer /t REG_SZ /d %ntp_server% /f >nul
+
+:: 5. Select poll interval
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient" /v SpecialPollInterval /t REG_DWORD /d 900 /f >nul
+
+:: 6. Set the time correction settings
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config" /v MaxPosPhaseCorrection /t REG_DWORD /d 3600 /f >nul
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config" /v MaxNegPhaseCorrection /t REG_DWORD /d 3600 /f >nul
+
+:: 7. Restart the windows time service
+net stop w32time >nul
+net start w32time >nul
+
 timeout /t 3 >nul
+
 goto windowsSettings
+
 
 :restart
 cls
@@ -785,6 +812,7 @@ set menu1=
 set powerconfig=
 set menu2=
 set new_hostname=
+set ntp_server=
 del %~dp0\users.csv /f /q >nul
 del %~dp0\secpol.inf /f /q >nul
 del %~dp0\energyAutoLock.pow /f /q >nul
