@@ -678,13 +678,16 @@ echo          *                                                *
 echo          *       De tijd zal elke 15 minuten              *
 echo          *       gesynchroniseerd worden.                 *
 echo          *                                                *
+echo          *       Voor Windows 7 en ouder gebruik          *
+echo          *       onderstaande syntax                      *
 echo          *                                                *
+echo          *       Net time \\<ntpserver> /set /yes         *
 echo          *                                                *
 echo          **************************************************
 echo.
 color 0e
 set /p ntp_server="IP-adres NTP server: "
-if "%ntp_server%"==" " goto NTP
+if "%ntp_server%"==" " goto windowsSettings
 goto setNTP
 
 :setNTP
