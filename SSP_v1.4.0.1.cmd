@@ -696,6 +696,11 @@ echo.
 echo De NTP server zal ingesteld worden op %ntp_server%.
 echo De tijd zal om de 15 minuten gesynchroniseerd worden.
 echo.
+::Activeren van de Time Service
+sc config w32time start=auto >nul
+::Stoppen Time service
+sc stop w32time >nul
+timeout /t 1 >nul
 
 :: 1. Change the server type to NTP
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters" /v Type /t REG_SZ /d NTP /f >nul
@@ -709,6 +714,10 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProvid
 
 :: 4. Specify the time sources
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters" /v NtpServer /t REG_SZ /d %ntp_server% /f >nul
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DateTime\Servers" /v 1 /t REG_SZ /d %ntp_server% /f >nul
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DateTime\Servers" /v 2 /t REG_SZ /d %ntp_server% /f >nul
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Datetime\Servers" /v 1 /t REG_SZ /d %ntp_server% /f >nul
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Datetime\Servers" /v 2 /t REG_SZ /d %ntp_server% /f >nul
 
 :: 5. Select poll interval
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient" /v SpecialPollInterval /t REG_DWORD /d 900 /f >nul
@@ -718,9 +727,11 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config" /v
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config" /v MaxNegPhaseCorrection /t REG_DWORD /d 3600 /f >nul
 
 :: 7. Restart the windows time service
-net stop w32time >nul
-net start w32time >nul
+sc start w32time >nul 
 
+cls
+echo. 
+echo De NTP server is ingesteld op %ntp_server%.
 timeout /t 3 >nul
 
 goto windowsSettings
