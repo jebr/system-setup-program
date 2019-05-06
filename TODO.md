@@ -1,4 +1,4 @@
-## TODO
+# TODO
 - [x] Herschrijven ReadMe
 - [ ] BG info toevoegen
 - [ ] Wallpaper maken Safety & Security
