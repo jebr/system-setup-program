@@ -9,10 +9,10 @@
 - [ ] Bestanden in %temp% plaatsen na starten programma
 - [ ] Controleren op ingevoerde hostname
 - [ ] IP-adres instellen via programma
-- [ ] Windows updates starten
-- [ * ] Koppelingen werkbalk verwijderen
-- [ * ] Opties snelle toegang -> privacy uitzetten
-- [ * ] Map opties 'Extensies voor bekende bestandstypen verbergen' uitschakelen
+- [ ] Windows updates starten **In progress**
+- [ ] Koppelingen werkbalk verwijderen **In progress**
+- [ ] Opties snelle toegang -> privacy uitzetten **In progress**
+- [ ] Map opties 'Extensies voor bekende bestandstypen verbergen' uitschakelen **In progress**
 - [ ] Firefox installatie
 - [x] NTP server (sync om de 15 min.)
 - [ ] Tegels uitzetten en verwijderen
@@ -22,5 +22,4 @@
 
 **Legenda**
 - [ ] TODO
-- [*] In progress
 - [x] Done
