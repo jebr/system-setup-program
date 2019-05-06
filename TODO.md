@@ -20,6 +20,8 @@
 - [ ] Aanpassen DisableWintracking (aanvinken alle vakjes)
 - [ ] Your wishes :smiley:
 
+---
+
 **Legenda**
 - [ ] TODO
 - [x] Done
