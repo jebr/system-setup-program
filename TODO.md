@@ -9,7 +9,7 @@
 - [ ] Bestanden in %temp% plaatsen na starten programma
 - [ ] Controleren op ingevoerde hostname
 - [ ] IP-adres instellen via programma
-- [ ] Windows updates starten `*In progress`
+- [ ] Windows updates starten
 - [ ] Koppelingen werkbalk verwijderen `*In progress`
 - [ ] Opties snelle toegang -> privacy uitzetten `*In progress`
 - [ ] Map opties 'Extensies voor bekende bestandstypen verbergen' uitschakelen `*In progress`
