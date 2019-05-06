@@ -22,5 +22,5 @@
 
 **Legenda**
 - [ ] TODO
-- [ * ] In progress
-- [ x ] Done
+- [*] In progress
+- [x] Done
