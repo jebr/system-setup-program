@@ -10,12 +10,17 @@
 - [ ] Controleren op ingevoerde hostname
 - [ ] IP-adres instellen via programma
 - [ ] Windows updates starten
-- [ ] Koppelingen werkbalk verwijderen
-- [ ] Opties snelle toegang -> privacy uitzetten
-- [ ] Map opties 'Extensies voor bekende bestandstypen' uitschakelen
+- [*] Koppelingen werkbalk verwijderen
+- [*] Opties snelle toegang -> privacy uitzetten
+- [*] Map opties 'Extensies voor bekende bestandstypen verbergen' uitschakelen
 - [ ] Firefox installatie
-- [ ] NTP server (Tardis)
+- [x] NTP server (sync om de 15 min.)
 - [ ] Tegels uitzetten en verwijderen
 - [ ] Aanpassingen Powershell DeBloater (Meldingen uitzetten)
 - [ ] Aanpassen DisableWintracking (aanvinken alle vakjes)
 - [ ] Your wishes :smiley:
+
+**Legenda**
+[ ] TODO
+[*} In progress
+[x] Done
