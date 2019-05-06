@@ -681,7 +681,7 @@ echo          *                                                *
 echo          *       Voor Windows 7 en ouder gebruik          *
 echo          *       onderstaande syntax                      *
 echo          *                                                *
-echo          *       Net time \\<ntpserver> /set /yes         *
+echo          *       Net time ^\^\^<ntpserver^> ^/set ^/yes         *
 echo          *                                                *
 echo          **************************************************
 echo.
