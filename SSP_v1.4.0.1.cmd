@@ -424,7 +424,7 @@ echo          *               Systeem Instellingen             *
 echo          **************************************************
 echo          *                                                *
 echo          *       1. Ping (ICMP) toestaan                  *
-echo          *                                                *
+echo          *       2. NTP toestaan                          *
 echo          *                                                *
 echo          *                                                *
 echo          *                                                *
@@ -436,21 +436,24 @@ echo          *                                                *
 echo          **************************************************
 echo.
 set /p menu1="Maak je keuze: "
-if "%menu1%"=="1" goto ping
+if "%menu1%"=="1" goto firewall_ping
+if "%menu1%"=="2" goto firewall_ntp
 if "%menu1%"=="7" goto windowsSettings
 if "%menu1%"==" " goto firewallsettings
 goto firewallsettings
 
-:ping
+::De firewll compleet uitzetten
+::netsh advfirewall set allprofiles state off >nul
+
+:firewall_ping
 cls
 color 0e
-title Ping toestaan
+title Firewall -Ping
 echo.
 echo Ping (ICMP) toestaan
 echo.
 netsh advfirewall firewall set  rule name="Bestands- en printerdeling (Echoaanvraag - ICMPv4-In)" new enable=yes >nul
 netsh advfirewall firewall set  rule name="File and Printer Sharing (Echo Request - ICMPv4-In)" new enable=yes >nul
-::netsh advfirewall set allprofiles state off >nul
 color 0A
 cls
 echo.
@@ -458,6 +461,24 @@ echo Ping (ICMP) is nu geopend.
 echo.
 timeout /t 3 >nul
 goto firewallsettings
+
+:firewall_ntp
+cls
+color 0e
+title Firewall - NTP
+echo.
+echo NTP toestaan (UDP poort 123)
+echo.
+netsh advfirewall firewall add rule name="NTP (UDP-123)" protocol=UDP dir=out localport=123 action=allow >nul
+netsh advfirewall firewall add rule name="NTP (UDP-123)" protocol=UDP dir=in localport=123 action=allow >nul
+color 0A
+cls
+echo.
+echo NTP (UDP poort 123) is nu geopend.
+echo.
+timeout /t 3 >nul
+goto firewallsettings
+
 
 :energy
 cls

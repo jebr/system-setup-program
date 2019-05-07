@@ -15,6 +15,7 @@
 - [ ] Map opties 'Extensies voor bekende bestandstypen verbergen' uitschakelen `*In progress`
 - [ ] Firefox installatie
 - [x] NTP server (sync om de 15 min.)
+- [x] Windows firewall - toestaan NTP (UDP-123)
 - [ ] Tegels uitzetten en verwijderen
 - [ ] Aanpassingen Powershell DeBloater (Meldingen uitzetten)
 - [ ] Aanpassen DisableWintracking (aanvinken alle vakjes)
