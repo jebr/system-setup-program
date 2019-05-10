@@ -19,6 +19,8 @@
 - [ ] Tegels uitzetten en verwijderen
 - [ ] Aanpassingen Powershell DeBloater (Meldingen uitzetten)
 - [ ] Aanpassen DisableWintracking (aanvinken alle vakjes)
+- [ ] Uitschakelen Windows geluid bij opstarten
+- [ ] Uitschakelen geluiden
 - [ ] Your wishes :smiley:
 
 
