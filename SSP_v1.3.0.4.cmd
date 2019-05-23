@@ -25,8 +25,8 @@
 ::dAsiuh18IRvcCxnZtBJQ
 ::cRYluBh/LU+EWAnk
 ::YxY4rhs+aU+IeA==
-::cxY6rQJ7JhzQF1fEqQJhZkgaHErQXA==
-::ZQ05rAF9IBncCkqN+0xwdVsFAlfMbCXoZg==
+::cxY6rQJ7JhzQF1fEqQJhZkgaHErWXA==
+::ZQ05rAF9IBncCkqN+0xwdVsFAlfMbCXuZg==
 ::ZQ05rAF9IAHYFVzEqQIDGys0
 ::eg0/rx1wNQPfEVWB+kM9LVsJDDebL3+/C/Uv7fzu/6q3sEIaRuMyGA==
 ::fBEirQZwNQPfEVWB+kM9LVsJDDexDAs=
@@ -37,7 +37,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFDFRXguHMleeA6YX/Ofr09m0knILBaxsNt+Vi/qLOOVz
+::Zh4grVQjdCyDJGyX8VAjFDFRXguHMleeA6YX/Ofr09m0knILBaxsNt+VjvqLOOVz
 ::YB416Ek+ZW8=
 ::
 ::
@@ -54,7 +54,7 @@ setlocal enabledelayedexpansion
 mode con:cols=67 lines=30
 ::zwart/geel
 color 0e
-title System Setup Program v1.3.0.1
+title System Setup Program v1.3.0.4
 
 :start
 cls
@@ -443,7 +443,9 @@ title Ping toestaan
 echo.
 echo Ping (ICMP) toestaan
 echo.
+::Firewall settings (NL)
 netsh advfirewall firewall set  rule name="Bestands- en printerdeling (Echoaanvraag - ICMPv4-In)" new enable=yes >nul
+::Firewall settings (EN)
 netsh advfirewall firewall set  rule name="File and Printer Sharing (Echo Request - ICMPv4-In)" new enable=yes >nul
 ::netsh advfirewall set allprofiles state off >nul
 color 0A
@@ -608,9 +610,18 @@ title RDP activeren
 echo.
 echo RDP wordt geactiveerd.
 
+::Register settings
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f >nul
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v SecurityLayer /t REG_DWORD /d 0 /f >nul
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 0 /f >nul
+::Firewall settings (NL)
+netsh advfirewall firewall set  rule name="Extern bureaublad - Gebruikersmodus (TCP-In)" new enable=yes >nul
+netsh advfirewall firewall set  rule name="Extern bureaublad - Gebruikersmodus (UDP-In)" new enable=yes >nul
+netsh advfirewall firewall set  rule name="Extern bureaublad - Schaduw (TCP-In)" new enable=yes >nul
+::Firewall settings (EN)
+netsh advfirewall firewall set  rule name="Remote Desktop - User Mode (TCP-In)" new enable=yes >nul
+netsh advfirewall firewall set  rule name="Remote Desktop - User Mode (UDP-In)" new enable=yes >nul
+netsh advfirewall firewall set  rule name="Remote Desktop - Shadow (TCP-In)" new enable=yes >nul
 
 color 0A
 cls
