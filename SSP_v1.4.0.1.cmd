@@ -452,7 +452,9 @@ title Firewall -Ping
 echo.
 echo Ping (ICMP) toestaan
 echo.
+::Firewall settings (NL)
 netsh advfirewall firewall set  rule name="Bestands- en printerdeling (Echoaanvraag - ICMPv4-In)" new enable=yes >nul
+::Firewall settings (EN)
 netsh advfirewall firewall set  rule name="File and Printer Sharing (Echo Request - ICMPv4-In)" new enable=yes >nul
 color 0A
 cls
@@ -469,6 +471,7 @@ title Firewall - NTP
 echo.
 echo NTP toestaan (UDP poort 123)
 echo.
+::Firewall settings
 netsh advfirewall firewall add rule name="NTP (UDP-123)" protocol=UDP dir=out localport=123 action=allow >nul
 netsh advfirewall firewall add rule name="NTP (UDP-123)" protocol=UDP dir=in localport=123 action=allow >nul
 color 0A
@@ -637,6 +640,15 @@ echo RDP wordt geactiveerd.
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f >nul
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v SecurityLayer /t REG_DWORD /d 0 /f >nul
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 0 /f >nul
+
+::Firewall settings (NL)
+netsh advfirewall firewall set  rule name="Extern bureaublad - Gebruikersmodus (TCP-In)" new enable=yes >nul
+netsh advfirewall firewall set  rule name="Extern bureaublad - Gebruikersmodus (UDP-In)" new enable=yes >nul
+netsh advfirewall firewall set  rule name="Extern bureaublad - Schaduw (TCP-In)" new enable=yes >nul
+::Firewall settings (EN)
+netsh advfirewall firewall set  rule name="Remote Desktop - User Mode (TCP-In)" new enable=yes >nul
+netsh advfirewall firewall set  rule name="Remote Desktop - User Mode (UDP-In)" new enable=yes >nul
+netsh advfirewall firewall set  rule name="Remote Desktop - Shadow (TCP-In)" new enable=yes >nul
 
 color 0A
 cls
