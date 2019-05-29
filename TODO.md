@@ -20,6 +20,7 @@
 - [ ] Aanpassen DisableWintracking (aanvinken alle vakjes)
 - [ ] Uitschakelen Windows geluid bij opstarten
 - [ ] Uitschakelen geluiden
+- [ ] Firewall - Netwerk discovery `*In progress`
 - [ ] Your wishes :smiley:
 
 

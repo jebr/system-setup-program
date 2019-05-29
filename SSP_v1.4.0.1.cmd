@@ -425,6 +425,7 @@ echo          **************************************************
 echo          *                                                *
 echo          *       1. Ping (ICMP) toestaan                  *
 echo          *       2. NTP toestaan                          *
+echo          *       3. Netwerk discovery activeren           *
 echo          *                                                *
 echo          *                                                *
 echo          *                                                *
@@ -438,6 +439,7 @@ echo.
 set /p menu1="Maak je keuze: "
 if "%menu1%"=="1" goto firewall_ping
 if "%menu1%"=="2" goto firewall_ntp
+if "%menu1%"=="3" goto firewall_netdiscover
 if "%menu1%"=="7" goto windowsSettings
 if "%menu1%"==" " goto firewallsettings
 goto firewallsettings
@@ -482,6 +484,24 @@ echo.
 timeout /t 3 >nul
 goto firewallsettings
 
+:firewall_netdiscover
+cls
+color 0e
+title Firewall - Netwerk discovery
+echo.
+echo Netwerk discovery activeren
+echo.
+::Firewall settings (NL)
+netsh advfirewall firewall set  rule name="Bestands- en printerdeling (Echoaanvraag - ICMPv4-In)" new enable=yes >nul
+::Firewall settings (EN)
+netsh advfirewall firewall set  rule name="File and Printer Sharing (Echo Request - ICMPv4-In)" new enable=yes >nul
+color 0A
+cls
+echo.
+echo Netwerk discovery is nu geactiveerd.
+echo.
+timeout /t 3 >nul
+goto firewallsettings
 
 :energy
 cls
