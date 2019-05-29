@@ -3,7 +3,6 @@
 - [ ] BG info toevoegen
 - [ ] Wallpaper maken Safety & Security
 - [ ] Wallpaper activeren voor lockscreen en bureaublad
-- [ ] BG info toevoegen
 - [ ] SSP  afsluiten blokkeren
 - [ ] Aanpassen locatie op scherm batch programma
 - [ ] Bestanden in %temp% plaatsen na starten programma
