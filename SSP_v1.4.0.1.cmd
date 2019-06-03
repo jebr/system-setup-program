@@ -492,9 +492,9 @@ echo.
 echo Netwerk discovery activeren
 echo.
 ::Firewall settings (NL)
-netsh advfirewall firewall set  rule name="Bestands- en printerdeling (Echoaanvraag - ICMPv4-In)" new enable=yes >nul
+netsh advfirewall firewall set  rule name="" new enable=yes >nul
 ::Firewall settings (EN)
-netsh advfirewall firewall set  rule name="File and Printer Sharing (Echo Request - ICMPv4-In)" new enable=yes >nul
+netsh advfirewall firewall set  rule name="" new enable=yes >nul
 color 0A
 cls
 echo.
