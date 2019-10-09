@@ -7,5 +7,4 @@ If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
     Break
 }
 
-
 Set-ExecutionPolicy Unrestricted
