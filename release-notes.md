@@ -1,5 +1,5 @@
 ![Logo](assets/SSP_64x64.png?raw=true "Logo SSP")
-## SSP Release Notes
+# SSP Release Notes
 
 Release 1.4.0.1
 ------
