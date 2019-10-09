@@ -58,3 +58,8 @@
 ##### Release 1.3.0.2 #####
 ##### 21-3-2019  #####
 (+) Verwijderen handleidingen na sluiten applicatie
+
+##### Release 1.4.0.1 #####
+##### 9-10-2019  #####
+(+) Activeren en deactiveren van USB-opslagapparaten
+(_) Wijzigingen in het menu
