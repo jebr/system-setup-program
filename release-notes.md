@@ -7,6 +7,7 @@
 <a href="https://github.com/jebr/System-Setup-Program-SSP/releases" Download>
   <img src="assets/download-small.png" alt="Download programma">
 </a>
+
 - Toegevoegd het activeren en deactiveren van USB-opslagapparaten
 - Wijzigingen in het menu aangebracht
 - Wijzigingen in hoofdpagina
