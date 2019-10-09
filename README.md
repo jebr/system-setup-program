@@ -39,4 +39,4 @@ Volg de instructies in de handleidingen. [Klik hier](help.txt) om de help tekst 
 [Realease notes](release-notes.md)
 
 ## TODO
-[TODO versie 1.4.0.1](TODO.md)
+[TODO versie 4](TODO.md)
