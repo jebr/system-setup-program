@@ -25,8 +25,8 @@
 ::dAsiuh18IRvcCxnZtBJQ
 ::cRYluBh/LU+EWAnk
 ::YxY4rhs+aU+IeA==
-::cxY6rQJ7JhzQF1fEqQJhZkgaHErQXA==
-::ZQ05rAF9IBncCkqN+0xwdVsFAlfMbCXoZg==
+::cxY6rQJ7JhzQF1fEqQJhZk8aHErTXA==
+::ZQ05rAF9IBncCkqN+0xwdVsFAlDMbCXrZg==
 ::ZQ05rAF9IAHYFVzEqQIDGys0
 ::eg0/rx1wNQPfEVWB+kM9LVsJDDebL3+/C/Uv7fzu/6q3sEIaRuMyGA==
 ::fBEirQZwNQPfEVWB+kM9LVsJDDexDAs=
@@ -37,7 +37,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFDFRXguHMleeA6YX/Ofr09m0knILBaxsNt+Vi/qLOOVz
+::Zh4grVQjdCyDJGyX8VAjFDFRXguHMleeA6YX/Ofr09m0knILBaxrNt+Vi/qLOOVz
 ::YB416Ek+ZW8=
 ::
 ::
@@ -109,7 +109,7 @@ echo          *                    Hoofdmenu                   *
 echo          **************************************************
 echo          *                                                *
 echo          *       1. Gebruikers toevoegen                  *
-echo          *       2. Security Policy toepassen             *
+echo          *       2. Veiligheid                            *
 echo          *       3. Software verwijderen (Bloatware)      *
 echo          *       4. Windows 10 - Disable tracking         *
 echo          *       5. Windows instelling                    *
@@ -123,7 +123,7 @@ echo          **************************************************
 echo.
 set /p menu="Maak je keuze: "
 if "%menu%"=="1" goto addUsers
-if "%menu%"=="2" goto addSecpol
+if "%menu%"=="2" goto securitySettings
 if "%menu%"=="3" goto removeBloatware
 if "%menu%"=="4" goto disableWinTracking
 if "%menu%"=="5" goto windowsSettings
@@ -205,6 +205,34 @@ echo.
 timeout /t 3 >nul
 goto menu
 
+
+:securitySettings
+cls
+color 0e
+title Veiligheid
+set menu1=
+echo.
+echo          **************************************************
+echo          *               Systeem Instellingen             *
+echo          **************************************************
+echo          *                                                *
+echo          *       1. Security policy toepassen             *
+echo          *       2. USB-opslagapparaten uitschakelen      *
+echo          *       3. USB-opslagapparaten inschakelen       *
+echo          *                                                *
+echo          *       4. Terug naar het Hoofdmenu              *
+echo          *                                                *
+echo          *                                                *
+echo          **************************************************
+echo.
+set /p menu1="Maak je keuze: "
+if "%menu1%"=="1" goto addSecpol
+if "%menu1%"=="2" goto disableUsbStorage
+if "%menu1%"=="3" goto enableUsbStorage
+if "%menu1%"=="4" goto menu
+if "%menu1%"==" " goto securitySettings
+goto securitySettings
+
 :addSecpol
 cls
 color 0e
@@ -235,7 +263,7 @@ echo.
 echo De Security Policy is succesvol toegepast.
 echo.
 timeout /t 5 >nul
-goto menu
+goto securitySettings
 
 :error_file_policy
 ::File secpol.inf not found
@@ -258,8 +286,41 @@ echo          *                                                *
 echo          **************************************************
 echo.
 timeout /t 3 >nul
-goto menu
+goto securitySettings
 
+::Disable USB storage devices
+:disableUsbStorage
+cls
+color 0e
+title Uitschakelen USB
+echo.
+echo USB-opslagapparaten worden uitgeschakeld.
+echo.
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USBSTOR" /v Start /t REG_DWORD /d 4 /f >nul
+color 0A
+cls
+echo.
+echo USB-opslagapparaten zijn succesvol uitgeschakeld.
+echo.
+timeout /t 3 >nul
+goto securitySettings
+
+::Enable USB storage devices
+:enableUsbStorage
+cls
+color 0e
+title Inschakelen USB
+echo.
+echo USB-opslagapparaten worden ingeschakeld.
+echo.
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USBSTOR" /v Start /t REG_DWORD /d 3 /f >nul
+color 0A
+cls
+echo.
+echo USB-opslagapparaten zijn succesvol ingeschakeld.
+echo.
+timeout /t 3 >nul
+goto securitySettings
 
 :removeBloatware
 cls
