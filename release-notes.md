@@ -9,8 +9,8 @@
   <img src="assets/download-small.png" alt="Download programma">
 </a>
   
-  
-  
+<br>
+ 
 - Toegevoegd: Activeren en deactiveren van USB-opslagapparaten
 - Wijziging: Menu structuur
 - Wijziging: Hoofdmenu
