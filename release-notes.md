@@ -6,7 +6,7 @@ Release 1.4.0.1
 ###### 9-10-2019
 
 <a href="https://github.com/jebr/System-Setup-Program-SSP/releases" Download style="width=200px; height=50px;">
-  <img src="assets/download.png" alt="Download programma">
+  <img src="assets/download-small.png" alt="Download programma">
 </a>
 
 
