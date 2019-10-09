@@ -1,8 +1,8 @@
 ![Logo](assets/SSP_64x64.png?raw=true "Logo SSP")
 # SSP Release Notes
 
-*Release 1.4.0.1*
-###### 9-10-2019
+### *Release 1.4.0.1*
+9-10-2019
 ---
 <a href="https://github.com/jebr/System-Setup-Program-SSP/releases" Download>
   <img src="assets/download-small.png" alt="Download programma">
