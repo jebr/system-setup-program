@@ -3,7 +3,7 @@
 
 Een programma voor het instellen van Windows 10.
 
-![Screenshot](assets/screenshot_v1.3.0.2.png?raw=true "SSP Hoofdmenu")
+![Screenshot](assets/screenshot_v1.4.0.1.png?raw=true "SSP Hoofdmenu")
 
 ## DOWNLOAD
 [DOWNLOAD PROGRAMMA](https://github.com/jebr/SSP/releases/)
@@ -18,8 +18,10 @@ Volg de instructies in de handleidingen. [Klik hier](help.txt) om de help tekst 
 ## Programma opties
 1. Toevoegen van gebruikers
     * Gebruik de user.csv voor het toevoegen van Windows gebruikers
-2. Toepassen van security policy
-    * Toepassen van de aangemaakte security policy
+2. Veiligheid
+    * Toepassen van de security policy
+    * Deactiveren van USB-opslagapparaten
+    * Activeren van USB-opslagapparaten
 3. Verwijderen van overbodige Windows 10 programma's
 	* [Windows 10 Debloater](https://github.com/Sycnex/Windows10Debloater)
 4. Deactiveren van Windows tracking
@@ -31,6 +33,7 @@ Volg de instructies in de handleidingen. [Klik hier](help.txt) om de help tekst 
     * Windows search/index uitschakelen
     * Windows Update uitschakelen
 	* Computernaam aanpassen
+    * Remote desktop (RDP) activeren
 
 ## TODO
 [TODO versie 1.4.0.1](TODO.md)
