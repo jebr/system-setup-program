@@ -5,11 +5,9 @@ Release 1.4.0.1
 ------
 ###### 9-10-2019
 
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Auto width -->
-<button class="btn"><i class="fa fa-download"></i> Download</button>
+<a href="/images/myw3schoolsimage.jpg" download>
+  <img src="/images/myw3schoolsimage.jpg" alt="W3Schools">
+</a>
 
 
 ## DOWNLOAD
