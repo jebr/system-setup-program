@@ -22,7 +22,7 @@
 - Wijziging: Verwijderen van handleidingen na sluiten applicatie
 
 
-## *Release 1.3.0.1*
+### *Release 1.3.0.1*
 ###### 21-3-2019
 ---
 - Toegevoegd: RDP activeren
@@ -31,19 +31,19 @@
 - Wijziging: Programmastructuur
 
 
-## *Release 1.2.0.1*
+### *Release 1.2.0.1*
 ###### 19-03-2019
 ---
 - Wijziging: Programmastructuur
 
 
-## *Release 1.0.0.7*
+### *Release 1.0.0.7*
 ###### 13-03-2019
 ---
 - Toegevoegd: Bloatware verwijderen
 
 
-## *Release 1.0.0.6*
+### *Release 1.0.0.6*
 ###### 28-02-2019
 ---
 - Toegevoegd: Nieuwe energieschemas (Auto-lock/Full)
@@ -51,13 +51,13 @@
 - Verbetering: Update DisableWintracking naar v3.2.3
 
 
-## *Release 1.0.0.5*
+### *Release 1.0.0.5*
 ###### 27-03-2018
 ---
 - Toegevoegd: Firewall ping (ICMP) aanpassing
 
 
-## *Release 1.0.0.4*
+### *Release 1.0.0.4*
 ###### 31-01-2018
 ---
 - Toegevoegd: Nieuw logo
@@ -67,20 +67,20 @@
 - Verwijderd: Administrator settings
 
 
-## *Release 1.0.0.3*
+### *Release 1.0.0.3*
 ###### 19-05-2016
 ---
 - Toegevoegd: Windows Update uitschakelen
 - Verbetering: Wijzigingen in help tekst
 
 
-## *Release 1.0.0.2*
+### *Release 1.0.0.2*
 ###### 19-05-2016
 ---
 - Verbetering: Windows 10 meldingen
 
 
-## *Release 1.0.0.1* 
+### *Release 1.0.0.1* 
 ###### 17-05-2016
 ---
 - Verbetering: Bij het opstarten van de applicatie wordt nu eerst de helppagina getoond
