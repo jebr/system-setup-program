@@ -2,8 +2,8 @@
 # SSP Release Notes
 
 **Release 1.4.0.1**
-* 9-10-2019*
-
+*9-10-2019*
+---
 <a href="https://github.com/jebr/System-Setup-Program-SSP/releases" Download>
   <img src="assets/download-small.png" alt="Download programma">
 </a>
@@ -15,8 +15,8 @@
 - Wijziging: Hoofdmenu
 
 
-### *Release 1.3.0.2*
-###### 21-3-2019
+**Release 1.3.0.2**
+*21-3-2019*
 ---
 - Wijziging: Verwijderen van handleidingen na sluiten applicatie
 
