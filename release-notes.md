@@ -4,13 +4,13 @@ SSP Release Notes
 Release 1.4.0.1
 ------
 ###### 9-10-2019
-{::nomarkdown}
+
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Auto width -->
 <button class="btn"><i class="fa fa-download"></i> Download</button>
-{:/}
+
 
 ## DOWNLOAD
 [DOWNLOAD PROGRAMMA](https://github.com/jebr/SSP/releases/)
