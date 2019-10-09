@@ -1,26 +1,21 @@
 ![Logo](assets/SSP_64x64.png?raw=true "Logo SSP")
 # SSP Release Notes
 
-Release 1.4.0.1
-------
+*Release 1.4.0.1*
 ###### 9-10-2019
-
-<a href="https://github.com/jebr/System-Setup-Program-SSP/releases" Download style="width=200px; height=50px;">
+---
+<a href="https://github.com/jebr/System-Setup-Program-SSP/releases" Download>
   <img src="assets/download-small.png" alt="Download programma">
 </a>
-
-
-## DOWNLOAD
-[DOWNLOAD PROGRAMMA](https://github.com/jebr/SSP/releases/)
-
 - Toegevoegd het activeren en deactiveren van USB-opslagapparaten
 - Wijzigingen in het menu aangebracht
 - Wijzigingen in hoofdpagina
 
 
-##### Release 1.3.0.2 #####
-##### 21-3-2019  #####
-(+) Verwijderen handleidingen na sluiten applicatie
+*Release 1.3.0.2*
+###### 21-3-2019
+---
+- Wijziging aangebracht in het verwijderen van handleidingen na sluiten applicatie
 
 
 
