@@ -1,7 +1,7 @@
 ![Logo](assets/SSP_64x64.png?raw=true "Logo SSP")
 # SSP Release Notes
 
-**Release 1.4.0.1**
+**Release 1.4.0.1**  
 *9-10-2019*
 
 ---
@@ -16,7 +16,7 @@
 - Wijziging: Hoofdmenu
 
 
-**Release 1.3.0.2**
+**Release 1.3.0.2**  
 *21-3-2019*
 ---
 - Wijziging: Verwijderen van handleidingen na sluiten applicatie
