@@ -1,12 +1,12 @@
 ![Logo](assets/SSP_64x64.png?raw=true "Logo SSP")
-SSP Release Notes
+## SSP Release Notes
 
 Release 1.4.0.1
 ------
 ###### 9-10-2019
 
-<a href="/images/myw3schoolsimage.jpg" download>
-  <img src="/images/myw3schoolsimage.jpg" alt="W3Schools">
+<a href="https://github.com/jebr/System-Setup-Program-SSP/releases" Download>
+  <img src="assets/download.png" alt="Download programma">
 </a>
 
 
