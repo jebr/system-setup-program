@@ -63,3 +63,4 @@
 ##### 9-10-2019  #####
 (+) Activeren en deactiveren van USB-opslagapparaten
 (_) Wijzigingen in het menu
+(_) Aanpassingen in README
